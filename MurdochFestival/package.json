@@ -32,5 +32,9 @@
     "url-loader": "0.5.9",
     "webpack": "^2.5.1",
     "webpack-hot-middleware": "2.18.2"
+  },
+  "dependencies": {
+    "@types/webfontloader": "^1.6.29",
+    "webfontloader": "^1.6.28"
   }
 }

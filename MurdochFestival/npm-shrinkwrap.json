@@ -55,6 +55,11 @@
         "@types/react-router": "4.0.12"
       }
     },
+    "@types/webfontloader": {
+      "version": "1.6.29",
+      "resolved": "https://registry.npmjs.org/@types/webfontloader/-/webfontloader-1.6.29.tgz",
+      "integrity": "sha512-wobuM+LvpkzU296NsFVRGDAFWw3X2XEhrLHuvV+VGSbok6aOxQcymmopUFwNB69qy5oudHt9lYC0JF+z+DxFLw=="
+    },
     "@types/webpack-env": {
       "version": "1.13.0",
       "resolved": "https://registry.npmjs.org/@types/webpack-env/-/webpack-env-1.13.0.tgz",
@@ -6634,6 +6639,11 @@
         "graceful-fs": "4.1.11",
         "neo-async": "2.5.1"
       }
+    },
+    "webfontloader": {
+      "version": "1.6.28",
+      "resolved": "https://registry.npmjs.org/webfontloader/-/webfontloader-1.6.28.tgz",
+      "integrity": "sha1-23hhKSU8tujq5UwvsF+HCvZnW64="
     },
     "webpack": {
       "version": "2.5.1",
