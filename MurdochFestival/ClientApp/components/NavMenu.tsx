@@ -3,38 +3,28 @@ import { Link, NavLink } from 'react-router-dom';
 
 export class NavMenu extends React.Component<{}, {}> {
     public render() {
-        return <div className='main-nav'>
-                <div className='navbar navbar-inverse'>
-                <div className='navbar-header'>
-                    <button type='button' className='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
-                        <span className='sr-only'>Toggle navigation</span>
-                        <span className='icon-bar'></span>
-                        <span className='icon-bar'></span>
-                        <span className='icon-bar'></span>
-                    </button>
-                    <Link className='navbar-brand' to={ '/' }>MurdochFestival</Link>
-                </div>
-                <div className='clearfix'></div>
-                <div className='navbar-collapse collapse'>
-                    <ul className='nav navbar-nav'>
-                        <li>
-                            <NavLink to={ '/' } exact activeClassName='active'>
-                                <span className='glyphicon glyphicon-home'></span> Home
-                            </NavLink>
+        return <nav className='menu--bar'>
+                  <div className='container'>
+                  <div className='menu--navigation'>
+                    <ul className="menu list-inline" data-role="menu">
+                        <li className="menu--item">
+                            <a className="menu--item__link" href="#">Artists</a>
                         </li>
-                        <li>
-                            <NavLink to={ '/counter' } activeClassName='active'>
-                                <span className='glyphicon glyphicon-education'></span> Counter
-                            </NavLink>
+                        <li className="menu--item">
+                            <a className="menu--item__link" href="#">Experiences</a>
                         </li>
-                        <li>
-                            <NavLink to={ '/fetchdata' } activeClassName='active'>
-                                <span className='glyphicon glyphicon-th-list'></span> Fetch data
-                            </NavLink>
+                        <li className="menu--item">
+                            <a className="menu--item__link" href="#">Festival Info</a>
+                        </li>
+                        <li className="menu--item">
+                            <a className="menu--item__link" href="#">Subscribe</a>
                         </li>
                     </ul>
-                </div>
-            </div>
-        </div>;
+                    <div className="masterbar--button">
+                        <a className="button--solid" href="#" target="_blank">Buy Tickets</a>
+                    </div>
+                   </div>
+                   </div>
+                </nav>;
     }
 }
