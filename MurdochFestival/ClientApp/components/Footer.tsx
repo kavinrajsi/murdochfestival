@@ -146,7 +146,7 @@ export class Footer extends React.Component<{}, {cname: string,  cemail: string,
                 <input className='form-control'value={this.state.temail} onChange={this.handleChange} />
             </div>
             <div className='form-group'>
-                <input className='form-button' type="submit" value="Keeping me posted" />
+                <input className='form-button' type="submit" value="Keep me posted" />
             </div>
         </form>
 
