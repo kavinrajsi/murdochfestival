@@ -10,7 +10,10 @@
         height: 100%;
     }
     .modal-content{
-        padding: 120px 100px 60px;
+        padding: 30px;
+        @media (min-width: 768px) {
+            padding: 120px 100px 60px;
+        }
         border-radius: 0px;
         box-shadow: none;
         border: 0px;
@@ -25,15 +28,20 @@
         }
         .close{
             font-family: 'Open Sans', sans-serif;
-            font-size: 70px;
             font-weight: 700;
             text-shadow: none;
             opacity: 1;
-            margin-top: 00px;
+            margin-top: 0px;
             padding: 0px 10px;
             position: absolute;
-            right: 45px;
-            top: 45px;
+            right: 15px;
+            top: 15px;
+            font-size: 30px;
+            @media (min-width: 768px) {
+                font-size: 70px;
+                right: 45px;
+                top: 45px;
+            }
             &:hover,
             &:focus{
                 opacity: 1;
@@ -56,7 +64,7 @@
     }
     .modal-header .modal-title,
     .modal-body p{
-            color: $White;
+            color: $Black;
     }
     .form-button{
         background: $VividCerise;
@@ -72,7 +80,8 @@
         color:  $VividCerise;
     }
     .modal-header .modal-title,
-    .modal-body p{
+    .modal-body p,
+    .form-group .lable-form{
             color: $White;
     }
     .form-button{
@@ -104,6 +113,9 @@
         resize: none;
     }
     .form-group{
+        .lable-form{
+            display: none;
+        }
         .form-control{
             border-radius: 0px;
             border: 0px;
@@ -136,4 +148,27 @@
 }
 
 .formlable-with{
+    .form-group{
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+        }
+        .lable-form{
+            display: inline-block;
+            margin-right: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+        }
+        .form-control{
+            display: inline-block;
+        }
+        .form-button{
+            @media (min-width: 768px) {
+                margin-left: auto;
+                width: 85%;
+
+            }
+        }
+    }
 }
