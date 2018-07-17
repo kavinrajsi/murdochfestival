@@ -17,6 +17,9 @@
 .grid--wrapper{
   .grid--artists{
     padding: 0px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
     .grid--artist{
       height: 45vh;
       width: 100%;
@@ -43,17 +46,19 @@
         position: absolute;
         left: 0px;
         bottom: 0px;
-        padding: 15px;
+        padding: 30px 20px;
           &--title{
             color: $White;
             text-transform: uppercase;
             padding: 0;
             margin: 0;
-            font-size: 19px;
+            font-size: 25px;
             font-weight: 700;
+            line-height: normal;
           }
           p{
             color: $White;
+            font-weight: 400;
             font-size: 15px;
           }
       }
@@ -86,6 +91,51 @@
     // .ArnoFaraji{
     //   @include artist-list(ArnoFaraji);
     // }
+  }
+}
+
+
+
+.grid--artists{
+  .grid--artist{
+    flex: 0 0 100%;
+    max-width: 100%;
+    @media (min-width: 768px){
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    @media (min-width: 992px){
+      &:nth-child(1){
+        flex: 0 0 60%;
+        max-width: 60%;
+      }
+      &:nth-child(2){
+        .grid--artist__info--title{
+          max-width: 60%;
+        }
+        flex: 0 0 40%;
+        max-width: 40%;
+      }
+      &:nth-child(3){
+        flex: 0 0 30%;
+        max-width: 30%;
+      }
+      &:nth-child(4){
+        flex: 0 0 30%;
+        max-width: 30%;
+      }
+      &:nth-child(5){
+        flex: 0 0 20%;
+        max-width: 20%;
+      }
+      &:nth-child(6){
+        .grid--artist__info--title{
+          max-width: 80%;
+        }
+        flex: 0 0 20%;
+        max-width: 20%;
+      }
+    }
   }
 }
 
