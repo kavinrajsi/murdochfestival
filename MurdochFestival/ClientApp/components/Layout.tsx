@@ -18,6 +18,7 @@ export class Layout extends React.Component<LayoutProps, {}> {
                 <footer className='footer--dark_bg'>
                     <Footer />
                 </footer>
+                <div id="container"> </div>
         </div>;
     }
 }

@@ -19,7 +19,7 @@
        margin-top: 20px;
      }
      .events-list,
-     .event-time-venu{
+     .event-time-venue{
         margin-bottom: 0px;
         li{
           @include interpolate("font-size", 768px, 20px, 1200px, 34px, "ease-in");
@@ -29,7 +29,7 @@
           line-height: normal;
         }
      }
-    .event-time-venu{
+    .event-time-venue{
       width: 100%;
       text-align: center;
       @media (min-width: 768px){

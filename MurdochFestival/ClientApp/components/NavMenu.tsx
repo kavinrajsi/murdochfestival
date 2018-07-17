@@ -1,7 +1,5 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-
-// import React, {Component, PropTypes} from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 export class NavMenu extends React.Component<{}, { isToggleOn: true }> {
@@ -27,7 +25,7 @@ export class NavMenu extends React.Component<{}, { isToggleOn: true }> {
           </div>
                     <ul data-role="menu"  className= {this.state.isToggleOn ? 'menu list-inline': 'menu list-inline menu-drawer-open'} >
                         <li className="menu--item visible-xs">
-                            <a className="menu--item__link menu-buytickets" href="#" target="_blank">Buy Tickets</a>
+                            <a className="menu--item__link menu-buytickets"  href="#"  data-toggle="modal" data-target="#tickets" >Buy Tickets</a>
                         </li>
                         <li className="menu--item">
                             <a className="menu--item__link" href="#artists">Artists</a>
@@ -39,11 +37,11 @@ export class NavMenu extends React.Component<{}, { isToggleOn: true }> {
                             <a className="menu--item__link" href="#festival-info">Festival Info</a>
                         </li>
                         <li className="menu--item">
-                            <a className="menu--item__link" href="">Subscribe</a>
+                            <a className="menu--item__link" href="#" data-toggle="modal" data-target="#stay-date">Subscribe</a>
                         </li>
                     </ul>
                     <div className="masterbar--button">
-                        <a className="button--solid" href="#" target="_blank">Buy Tickets</a>
+                        <a className="button--solid" href="#"  data-toggle="modal" data-target="#tickets" >Buy Tickets</a>
                     </div>
                    </div>
                 </nav>;

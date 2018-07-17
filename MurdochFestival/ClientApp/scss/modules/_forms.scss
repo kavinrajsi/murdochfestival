@@ -1,0 +1,139 @@
+.modal {
+    .modal-dialog {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 100%;
+    }
+    .modal-content{
+        padding: 120px 100px 60px;
+        border-radius: 0px;
+        box-shadow: none;
+        border: 0px;
+    }
+    .modal-header{
+        border: 0px;
+        padding: 0px;
+        .modal-title{
+            font-weight: 700;
+            font-size: 42px;
+            text-transform: uppercase;
+        }
+        .close{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 70px;
+            font-weight: 700;
+            text-shadow: none;
+            opacity: 1;
+            margin-top: 00px;
+            padding: 0px 10px;
+            position: absolute;
+            right: 45px;
+            top: 45px;
+            &:hover,
+            &:focus{
+                opacity: 1;
+            }
+        }
+    }
+    .modal-body{
+        padding: 0px;
+    }
+}
+
+
+#contactus-address{
+    .modal-content{
+        background: $PearlAqua;
+    }
+    .modal-header .close{
+        background: $Black;
+        color:  $White;
+    }
+    .modal-header .modal-title,
+    .modal-body p{
+            color: $White;
+    }
+    .form-button{
+        background: $VividCerise;
+        color: $White;
+    }
+}
+#stay-date{
+    .modal-content{
+        background: $VividCerise;
+    }
+    .modal-header .close{
+        background: $White;
+        color:  $VividCerise;
+    }
+    .modal-header .modal-title,
+    .modal-body p{
+            color: $White;
+    }
+    .form-button{
+        background: $Dandelion;
+    }
+}
+#tickets{
+    .modal-content{
+        background: $Dandelion;
+    }
+    .modal-header .close{
+        background: $White;
+        color:  $Black;
+    }
+    .modal-header .modal-title,
+    .modal-body p{
+            color: $Black;
+    }
+    .form-button{
+        background: $VividCerise;
+        color: $White;
+    }
+}
+
+
+
+.modal-form{
+    textarea{
+        resize: none;
+    }
+    .form-group{
+        .form-control{
+            border-radius: 0px;
+            border: 0px;
+            box-shadow: none;
+            height: 54px;
+            padding: 15px;
+        }
+        textarea.form-control{
+            height: 250px;
+        }
+        .form-button{
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin: 0px;
+            padding: 0;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            line-height: normal;
+            padding: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 17px;
+            font-family: 'Arial', Helvetica, sans-serif;
+            font-weight: bold;
+            -webkit-appearance: none;
+        }
+    }
+}
+
+.formlable-with{
+}

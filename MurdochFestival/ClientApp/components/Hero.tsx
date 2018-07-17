@@ -12,7 +12,7 @@ export class Hero extends React.Component<{}, {}> {
                 <li> / Experiences </li>
                 <li> &amp; More </li>
             </ul>
-            <ul className='list-unstyled event-time-venu'>
+            <ul className='list-unstyled event-time-venue'>
                 <li>Sept 28 / 3-9:30PM</li>
                 <li>14-18 Years Event / Perth Arena </li>
             </ul>
