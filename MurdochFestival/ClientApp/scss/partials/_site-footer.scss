@@ -1,0 +1,100 @@
+.footer--dark_bg{
+    background: $RichBlack;
+    padding: 25px 0px 0px; 
+    @media (min-width: 768px){
+        padding: 50px 0px;
+    }
+    .footer--information{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @media (max-width: 992px){
+            justify-content: center;
+        }
+    }
+    .footer--nav{
+        display: flex;
+        @media (max-width: 992px){
+            margin-bottom: 30px;
+        }
+        @media (max-width: 400px){
+            flex-direction: column;
+            margin-bottom: 0px;
+        }
+        .copyrights--nav{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding-right: 18px;
+            margin-right: 18px;
+            @media (min-width: 768px){
+                padding-right: 36px;
+                margin-right: 36px;
+            }
+            a{
+                color: $White;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 20px;
+                margin-bottom: 15px;
+            }
+            &:after{
+                content: ' ';
+                display: inline-block;
+                width: 1px;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                background: $White;                
+                @media (max-width: 400px){
+                   content: none;
+                }
+            }
+        }
+    }
+    .footer--address{
+        color: $White;
+        font-weight: 700;
+        address{
+            span{
+                &:first-child{
+                    font-size: 27px;
+                }
+                font-size: 12px;
+                line-height: normal;
+                display: block;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .footer--icons{
+        @media (max-width: 992px){
+            text-align: center;
+        }
+        a{
+            display: inline-block;
+            img{
+                width: auto;
+                height: 30px;
+                margin: 0 15px;
+                @media (max-width: 992px){
+                    margin-bottom: 15px;
+                }
+            }
+            &:first-child{
+                img{
+                    margin-left: 0px;
+                }
+            }
+            &:last-child{
+                img{
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}

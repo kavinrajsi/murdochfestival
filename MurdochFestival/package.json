@@ -34,7 +34,9 @@
     "webpack-hot-middleware": "2.18.2"
   },
   "dependencies": {
+    "@types/react-bootstrap": "^0.32.11",
     "@types/webfontloader": "^1.6.29",
+    "react-bootstrap": "^0.32.1",
     "webfontloader": "^1.6.28"
   }
 }

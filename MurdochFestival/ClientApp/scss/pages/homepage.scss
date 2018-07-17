@@ -1,0 +1,165 @@
+.l-section-title{
+  @include interpolate("font-size", 768px, 26px, 1200px, 49px, "ease-in");
+  font-weight: 700;
+  margin: 0px 15px 15px;
+  @media (min-width: 768px){
+    margin-bottom: 36px;
+  }
+  text-transform: uppercase;
+  color: $White;
+  .section--experiences &,
+  .section--festival &{
+    color: $EerieBlack;
+  }
+}
+
+
+.grid--wrapper{
+  .grid--artists{
+    padding: 0px 15px;
+    .grid--artist{
+      height: 45vh;
+      width: 100%;
+      position: relative;
+      &__image{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      &:after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: rgba($color: #39383a, $alpha: 0.30);
+      }
+      }
+      &__info{
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        padding: 15px;
+          &--title{
+            color: $White;
+            text-transform: uppercase;
+            padding: 0;
+            margin: 0;
+            font-size: 19px;
+            font-weight: 700;
+          }
+          p{
+            color: $White;
+            font-size: 15px;
+          }
+      }
+      &:hover{
+        .grid--artist__image{
+          opacity: 0.8;
+        }
+      }
+    }
+    @each $artist-list in $artist-lists {
+      .#{$artist-list} {
+        background-image: url('../image/artists/#{$artist-list}.jpg');
+      }
+    }
+    // .AlisonWonderland{
+    //   @include artist-list(AlisonWonderland); 
+    // }
+     .CosmosMidnight{
+      background-position: 90% bottom;
+     }
+    // .SamPerry{
+    //   @include artist-list(SamPerry);
+    // }
+    // .TkayMaidza{
+    //   @include artist-list(TkayMaidza);
+    // }
+    // .FlexMami{
+    //   @include artist-list(FlexMami);
+    // }
+    // .ArnoFaraji{
+    //   @include artist-list(ArnoFaraji);
+    // }
+  }
+}
+
+.list--wrapper{
+  .list--experiences{
+    .list--experience{
+      &__info{
+        margin-bottom: 22px;
+        @media(min-width: 720px){
+          margin-bottom: 40px;
+        }
+        &--title{
+          font-size: 27px;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: $EerieBlack;
+          padding: 0px;
+          margin: 0px;
+        }
+        &.with--image{
+          .list--experience__info--title{
+            margin: 0px 0px 14px;
+            @include interpolate("margin-right", 768px, 20px, 1200px, 140px, "ease-in");
+            @media(min-width: 720px){
+              margin-bottom: 20px;
+            }
+          }
+        }
+        p{
+          font-size: 14px;
+          font-weight: 400;
+          line-height: normal;
+          color: $EerieBlack;
+          margin-bottom: 17px;
+          @media(min-width: 720px){
+            margin-bottom: 30px;
+          }
+        }
+      }
+      &__image{
+        height: 45vh;
+        margin-right: 37px;
+        margin-bottom: 30px;
+        float: none;
+        width: 100%;
+        @media(min-width: 720px){
+          width: 60%;
+          float: left;
+        }
+        &:after,
+        &:before{
+          content: ' ';
+          display: block;
+          clear: both;
+        }
+        &.create-the-life-youwant{
+          background-image: url('../image/experiences/create-the-life-youwant.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: top center;
+        }
+        &.future-beats-experiences{
+          display: none;
+        }
+        @media (min-width: 720px){
+          &.future-beats-experiences{
+            display: block;
+            background-image: url('../image/experiences/future-beats-experiences.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top center;
+          }
+        }
+      }
+    }
+  }
+}

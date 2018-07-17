@@ -6,7 +6,7 @@ export class Artists extends React.Component<{}, {}> {
             <div className='row'>
               <h2 className='left l-section-title'>Artists</h2>
                <div className='grid--wrapper'>
-                 <div className='grid--artists'>
+                 <div className='grid--artists col-xs-12'>
 
                    <div className='grid--artist col-xs-12 col-sm-8'>
                      <div className='grid--artist__image AlisonWonderland'> </div>

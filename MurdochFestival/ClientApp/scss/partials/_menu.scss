@@ -1,0 +1,124 @@
+.nav--dark_bg{
+  background: rgba(236,13,136,1);
+  @media (min-width: 768px) {
+    background: -moz-linear-gradient(left, rgba(236,13,136,1) 0%, rgba(245,131,32,1) 50%, rgba(251,243,23,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(236,13,136,1)), color-stop(50%, rgba(245,131,32,1)), color-stop(100%, rgba(251,243,23,1)));
+    background: -webkit-linear-gradient(left, rgba(236,13,136,1) 0%, rgba(245,131,32,1) 50%, rgba(251,243,23,1) 100%);
+    background: -o-linear-gradient(left, rgba(236,13,136,1) 0%, rgba(245,131,32,1) 50%, rgba(251,243,23,1) 100%);
+    background: -ms-linear-gradient(left, rgba(236,13,136,1) 0%, rgba(245,131,32,1) 50%, rgba(251,243,23,1) 100%);
+    background: linear-gradient(to right, rgba(236,13,136,1) 0%, rgba(245,131,32,1) 50%, rgba(251,243,23,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec0d88', endColorstr='#fbf317', GradientType=1 );
+    .navbar-fixed-top{
+      border: 0px;
+    }
+  }
+.menu--bar{
+  width: 100%;
+  margin: 0px auto;
+  @media (min-width: 768px) {
+    width: 750px;
+  }
+  @media (min-width: 992px) {
+    width: 970px;
+  }
+  @media (min-width: 1200px) {
+    width: 1170px;
+  }
+}
+  .menu--navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   /* menu icon */
+   #nav-burgermenu {
+      overflow: hidden;
+      @media (min-width: 768px) {
+        display: none;
+      }
+      display: block;
+      position: relative;
+      height: 30px;
+      width: 30px;
+      cursor: pointer;
+      left: 15px;
+      top: 0px;
+        .buger-menu-icon {
+            cursor: pointer;
+            height: 2px;
+            width: 30px;
+            background: $White;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            display: block;
+            content: '';
+            right: 0px;
+            padding: 0px 5px;
+            transition: all 0.5s ease-in-out;
+            &:before,
+            &:after {
+                cursor: pointer;
+                border-radius: 1px;
+                height: 2px;
+                width: 30px;
+                background: #fff;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                display: block;
+                content: '';
+                right: 0px;
+                padding: 0px 5px;
+                transition: all 0.5s ease-in-out;
+            }
+            &:before {
+              top: -10px;
+            }
+            &:after {
+              top: 10px;
+            }
+            /* active */
+            &.active {
+                width: 0px;
+                height: 0px;
+                &:before,
+                &:after {
+                  top: 0px;
+                }
+                &:before {
+                  transform: rotate(135deg);
+                }
+                &:after {
+                  transform: rotate(-135deg);
+                }
+            }
+        }
+    }
+
+    .menu{
+      display: none;
+      @media (min-width: 768px) {
+        display: block;
+      }
+      margin-bottom: 0px;
+      &--item{
+        padding: 0px;
+         &__link{
+          font-size: 16px;
+          font-weight: 700;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: $White;
+          padding: 0px 20px;
+          &:first-child{
+            padding-left: 0px;
+          }
+         }
+      }
+    }
+    .masterbar--button{
+      @extend %buy-tickets;
+    }
+  }
+}
+

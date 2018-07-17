@@ -3,18 +3,22 @@ import { RouteComponentProps } from 'react-router';
 import { Hero } from './Hero';
 import { Artists } from './Artists';
 import { Experiences } from './Experiences';
+import { Festival } from './Festival';
 
 export class Home extends React.Component<RouteComponentProps<{}>, {}> {
     public render() {
         return <div>
-            <section className='first--fold banner--home'>
+            <section id='' className='first--fold banner--home'>
                 <Hero />
             </section>
-            <section className='artists'>
+            <section id='artists' className='section--artists'>
                 <Artists />
             </section>
-            <section className='experiences'>
+            <section id='experiences' className='section--experiences'>
                 <Experiences />
+            </section>
+            <section id='festival-info' className='section--festival'>
+                <Festival />
             </section>
         </div>;
     }
