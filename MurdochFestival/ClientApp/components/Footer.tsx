@@ -6,21 +6,36 @@ const hit92 = require('../image/footer/hit-92-9.png');
 const pertharena = require('../image/footer/perth-arena.png');
 const murdoch = require('../image/footer/murdoch.png');
 
-export class Footer extends React.Component<{}, {value: string}> {
+export class Footer extends React.Component<{}, {cname: string,  cemail: string,  cmessage: string, sname: string, semail: string, tname: string, temail: string}> {
     constructor(props:any) {
         super(props);
-        this.state = {value: ''};
+        this.state = {
+            cname: '',
+            cemail: '',
+            cmessage: '',
+            sname: '',
+            semail: '',
+            tname: '',
+            temail: ''
+        };
     
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
       }
     
       handleChange(event:any) {
-        this.setState({value: event.target.value});
+        this.setState({cname: event.target.cname});
+        this.setState({cemail: event.target.cemail});
+        this.setState({cemail: event.target.cemail});
+        this.setState({cmessage: event.target.cmessage});
+        this.setState({sname: event.target.value1});
+        this.setState({semail: event.target.value2});
+        this.setState({tname: event.target.value3});
+        this.setState({temail: event.target.value4});
       }
     
       handleSubmit(event:any) {
-        alert('A name was submitted: ' + this.state.value);
+        alert('A name was submitted: ');
         event.preventDefault();
       }
 
@@ -62,15 +77,15 @@ export class Footer extends React.Component<{}, {value: string}> {
         <form onSubmit={this.handleSubmit} className='modal-form'>
             <div className='form-group'>
                 <label className='lable-form'>Name:</label>
-                <input className='form-control' placeholder='Name' value={this.state.value} onChange={this.handleChange} />
+                <input className='form-control' placeholder='Name' value={this.state.cname} onChange={this.handleChange} />
             </div>
             <div className='form-group'>
                 <label className='lable-form'>Email:</label>
-                <input className='form-control' placeholder='Email' value={this.state.value} onChange={this.handleChange} />
+                <input className='form-control' placeholder='Email' value={this.state.cemail} onChange={this.handleChange} />
             </div>
             <div className='form-group'>
                 <label className='lable-form'>Message:</label>
-                <textarea className='form-control' placeholder='Message' value={this.state.value} onChange={this.handleChange} />
+                <textarea className='form-control' placeholder='Message' value={this.state.cmessage} onChange={this.handleChange} />
             </div>
             <div className='form-group'>
                 <input className='form-button' type="submit" value="Submit" />
@@ -95,11 +110,11 @@ export class Footer extends React.Component<{}, {value: string}> {
         <form onSubmit={this.handleSubmit} className='modal-form formlable-with'>
             <div className='form-group'>
                 <label className='lable-form'>Name</label>
-                <input className='form-control' value={this.state.value} onChange={this.handleChange} />
+                <input className='form-control' value={this.state.sname} name='sname' onChange={this.handleChange} />
             </div>
             <div className='form-group'>
                 <label className='lable-form'>Email</label>
-                <input className='form-control' value={this.state.value} onChange={this.handleChange} />
+                <input className='form-control' value={this.state.semail} name='semail' onChange={this.handleChange} />
             </div>
             <div className='form-group'>
                 <input className='form-button' type="submit" value="Subscribe" />
@@ -124,11 +139,11 @@ export class Footer extends React.Component<{}, {value: string}> {
         <form onSubmit={this.handleSubmit} className='modal-form formlable-with'>
             <div className='form-group'>
                 <label className='lable-form'>Name</label>
-                <input className='form-control' value={this.state.value} onChange={this.handleChange} />
+                <input className='form-control' value={this.state.tname} onChange={this.handleChange} />
             </div>
             <div className='form-group'>
                 <label className='lable-form'>Email</label>
-                <input className='form-control'value={this.state.value} onChange={this.handleChange} />
+                <input className='form-control'value={this.state.temail} onChange={this.handleChange} />
             </div>
             <div className='form-group'>
                 <input className='form-button' type="submit" value="Keeping me posted" />
