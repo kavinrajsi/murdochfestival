@@ -1,13 +1,7 @@
 .nav--dark_bg{
   background: rgba(236,13,136,1);
   @media (min-width: 768px) {
-    background: -moz-linear-gradient(left, rgba(236,13,136,1) 0%, rgba(245,131,32,1) 50%, rgba(251,243,23,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(236,13,136,1)), color-stop(50%, rgba(245,131,32,1)), color-stop(100%, rgba(251,243,23,1)));
-    background: -webkit-linear-gradient(left, rgba(236,13,136,1) 0%, rgba(245,131,32,1) 50%, rgba(251,243,23,1) 100%);
-    background: -o-linear-gradient(left, rgba(236,13,136,1) 0%, rgba(245,131,32,1) 50%, rgba(251,243,23,1) 100%);
-    background: -ms-linear-gradient(left, rgba(236,13,136,1) 0%, rgba(245,131,32,1) 50%, rgba(251,243,23,1) 100%);
     background: linear-gradient(to right, rgba(236,13,136,1) 0%, rgba(245,131,32,1) 50%, rgba(251,243,23,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec0d88', endColorstr='#fbf317', GradientType=1 );
     .navbar-fixed-top{
       border: 0px;
     }
@@ -31,6 +25,13 @@
     justify-content: space-between;
    /* menu icon */
    #nav-burgermenu {
+     &.active{
+      @include z-index(menuicon);
+      left: initial;
+      right: 20px;
+      position: absolute;
+      top: 15px;
+     }
       overflow: hidden;
       @media (min-width: 768px) {
         display: none;
@@ -115,6 +116,29 @@
           }
          }
       }
+      &.menu-drawer-open{
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        margin: 0px;
+        background: rgba(250,220,28,1);
+        background: -moz-linear-gradient(45deg, rgba(250,220,28,1) 0%, rgba(255,128,0,1) 27%, rgba(235,17,126,1) 100%);
+        background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(250,220,28,1)), color-stop(27%, rgba(255,128,0,1)), color-stop(100%, rgba(235,17,126,1)));
+        background: -webkit-linear-gradient(45deg, rgba(250,220,28,1) 0%, rgba(255,128,0,1) 27%, rgba(235,17,126,1) 100%);
+        background: -o-linear-gradient(45deg, rgba(250,220,28,1) 0%, rgba(255,128,0,1) 27%, rgba(235,17,126,1) 100%);
+        background: -ms-linear-gradient(45deg, rgba(250,220,28,1) 0%, rgba(255,128,0,1) 27%, rgba(235,17,126,1) 100%);
+        background: linear-gradient(45deg, rgba(250,220,28,1) 0%, rgba(255,128,0,1) 27%, rgba(235,17,126,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fadc1c', endColorstr='#eb117e', GradientType=1 );
+        padding: 60px 20px 10px;
+        flex-direction: column;
+          .menu--item{
+            padding: 10px;
+          }
+      }
     }
     .masterbar--button{
       @extend %buy-tickets;
@@ -122,3 +146,18 @@
   }
 }
 
+.menu--item__link{
+  &.menu-buytickets{
+    &:after{
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-left: 20px;
+      background-image: url('../image/icon-link.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+} 

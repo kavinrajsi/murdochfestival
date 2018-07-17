@@ -10,10 +10,21 @@
       text-decoration: none;
       color: $White;
       padding: 22px;
-            
-      @include interpolate("font-size", 768px, 16px, 1200px, 32px, "ease-in");
-      
+      font-size: 16px;
+      // @include interpolate("font-size", 768px, 16px, 1200px, 32px, "ease-in");
       @media (min-width: 768px) {
+        padding: 14px 42px 18px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border: 1.5px solid $White;
+        background-color: $MexicanPink;
+      }
+      @media (min-width: 992px) {
+        font-size: 32px;
+
+      }
+      @media (min-width: 1200px) {
+        font-size: 32px;
         padding: 14px 42px 18px;
         margin-top: 30px;
         margin-bottom: 30px;
@@ -25,12 +36,17 @@
         display: inline-block;
         width: 20px;
         height: 20px;
-
-        @include interpolate("margin-left", 768px, 20px, 1200px, 38px, "ease-in");
-
+        margin-left: 20px;
         @media (min-width: 768px) {
+          
+        }
+        @media (min-width: 992px) {
+          margin-left: 20px;
           width: 30px;
           height: 30px;
+        }
+        @media (min-width: 992px) {
+          margin-left: 38px;
         }
         background-image: url('../image/icon-link.png');
         background-position: center;
