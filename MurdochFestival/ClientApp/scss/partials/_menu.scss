@@ -1,6 +1,9 @@
 .nav--dark_bg{
   background: rgba(236,13,136,1);
   @media (min-width: 768px) {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(236,13,136,1)), color-stop(50%, rgba(245,131,32,1)), to(rgba(251,243,23,1)));
+    background: -webkit-linear-gradient(left, rgba(236,13,136,1) 0%, rgba(245,131,32,1) 50%, rgba(251,243,23,1) 100%);
+    background: -o-linear-gradient(left, rgba(236,13,136,1) 0%, rgba(245,131,32,1) 50%, rgba(251,243,23,1) 100%);
     background: linear-gradient(to right, rgba(236,13,136,1) 0%, rgba(245,131,32,1) 50%, rgba(251,243,23,1) 100%);
     .navbar-fixed-top{
       border: 0px;
