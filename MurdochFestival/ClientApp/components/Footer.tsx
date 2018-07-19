@@ -72,7 +72,7 @@ export class Footer extends React.Component<{}, {cname: string,  cemail: string,
         <h4 className="modal-title" id="contactus-address">Contact us</h4>
       </div>
       <div className="modal-body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        <p>Got question? Enter it below and we'll get back to you ASAP.</p>
 
         <form onSubmit={this.handleSubmit} className='modal-form'>
             <div className='form-group'>
@@ -105,7 +105,7 @@ export class Footer extends React.Component<{}, {cname: string,  cemail: string,
         <h4 className="modal-title" id="stay-date">Stay up to date</h4>
       </div>
       <div className="modal-body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        <p>Keep your finger on the beat – subscribe to all the latest updates on festival times, venue info and everything else you need to know.</p>
 
         <form onSubmit={this.handleSubmit} className='modal-form formlable-with'>
             <div className='form-group'>
@@ -134,7 +134,7 @@ export class Footer extends React.Component<{}, {cname: string,  cemail: string,
         <h4 className="modal-title" id="tickets">Tickets</h4>
       </div>
       <div className="modal-body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        <p>Don't be the last to know – submit your details to get notified as soon as tickets become available!</p>
 
         <form onSubmit={this.handleSubmit} className='modal-form formlable-with'>
             <div className='form-group'>
