@@ -18,7 +18,7 @@ export class Hero extends React.Component<{}, {}> {
             </ul>
             </div>
             <div className='scroll-down'>
-               <a href='#' className='button--out__more'>Find out more</a>
+               <a href='#artists' className='button--out__more'>Find out more</a>
             </div>
             </div>
         </div>;

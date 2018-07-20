@@ -114,7 +114,16 @@
           text-transform: uppercase;
           text-decoration: none;
           color: $White;
-          padding: 0px 20px;
+          padding: 0px 30px;
+
+            @media (min-width: 1024px) {
+                font-size: 18px;
+                padding: 0 40px;
+            }
+            @media (min-width: 1200px) {
+                font-size: 20px;
+                padding: 0 60px;
+            }
           &:first-child{
             padding-left: 0px;
           }

@@ -1,5 +1,6 @@
 import './scss/main.scss';
 import 'bootstrap';
+import './scripts/main.js';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
