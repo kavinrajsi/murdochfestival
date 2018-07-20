@@ -8,6 +8,7 @@ import { Festival } from './Festival';
 export class Home extends React.Component<RouteComponentProps<{}>, {}> {
     public render() {
         return <div>
+            <div className='hero'> </div>
             <section id='' className='first--fold banner--home'>
                 <Hero />
             </section>
