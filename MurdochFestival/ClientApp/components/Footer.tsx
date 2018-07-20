@@ -26,7 +26,6 @@ export class Footer extends React.Component<{}, {cname: string,  cemail: string,
       handleChange(event:any) {
         this.setState({cname: event.target.cname});
         this.setState({cemail: event.target.cemail});
-        this.setState({cemail: event.target.cemail});
         this.setState({cmessage: event.target.cmessage});
         this.setState({sname: event.target.value1});
         this.setState({semail: event.target.value2});
