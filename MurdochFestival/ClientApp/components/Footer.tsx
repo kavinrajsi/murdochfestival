@@ -57,9 +57,9 @@ export class Footer extends React.Component<{}, {cname: string,  cemail: string,
                 </div>
             </div>
             <div className='footer--icons'>
-                <a href='#' target="_blank"> <img alt='transperth' src={String(transperth)} /> </a>
-                <a href='#' target="_blank"> <img alt='hit-92.9' src={String(hit92)} /> </a>
-                <a href='#' target="_blank"> <img alt='perth-arena' src={String(pertharena)}  /> </a>
+                <a href='https://www.transperth.wa.gov.au/' target="_blank"> <img alt='transperth' src={String(transperth)} /> </a>
+                <a href='https://www.hit.com.au/perth' target="_blank"> <img alt='hit-92.9' src={String(hit92)} /> </a>
+                <a href='http://www.pertharena.com.au/' target="_blank"> <img alt='perth-arena' src={String(pertharena)}  /> </a>
                 <a href='http://www.murdoch.edu.au' target="_blank"> <img alt='murdoch' src={String(murdoch)} /> </a>
             </div>
             </div>
