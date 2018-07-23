@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Net.Http.Headers;
 using MurdochFestival.Data;
+using MurdochFestival.Services;
 
 namespace MurdochFestival
 {
@@ -26,6 +27,9 @@ namespace MurdochFestival
             // Add framework services.            
             services.AddDbContext<FormContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddMvc();
+
+            //register crm integration
+            services.AddTransient<ICrmService, CrmService>();
 
             //compression
             services.Configure<GzipCompressionProviderOptions>(options => options.Level = System.IO.Compression.CompressionLevel.Optimal);

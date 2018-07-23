@@ -1,10 +1,13 @@
 using System;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MurdochFestival.Data;
 using MurdochFestival.Logging;
 using MurdochFestival.Models.EF;
 using MurdochFestival.Models.Response;
+using MurdochFestival.Models.Services;
+using MurdochFestival.Services;
 
 namespace MurdochFestival.Controllers
 {
@@ -13,11 +16,13 @@ namespace MurdochFestival.Controllers
     {
         private FormContext Context { get; }
         private ILogger Logger { get; }
-
-        public FormDataController(FormContext context, ILogger<HomeController> logService)
+        private ICrmService CrmService { get; }
+    
+        public FormDataController(FormContext context, ILogger<HomeController> logService, ICrmService crmService)
         {
           Context = context;
           Logger = logService;
+          CrmService = crmService;
         }
 
         ///POST /api/FormData/ContactUsSubmit
@@ -34,6 +39,14 @@ namespace MurdochFestival.Controllers
             {
               Context.ContactUsEntries.Add(entry);
               Context.SaveChanges();
+        
+              var contact = new CrmContact
+              {
+                FirstName = entry.ContactName.Split(' ').First(),
+                LastName = entry.ContactName.Split(' ').Last(),
+                EmailAddress = entry.Email
+              };
+              CrmService.CreateContact(contact);
             }
             catch (Exception ex)
             {                           
@@ -57,6 +70,15 @@ namespace MurdochFestival.Controllers
             {
               Context.SubscribeEntries.Add(entry);
               Context.SaveChanges();
+
+              var contact = new CrmContact
+              {
+                FirstName = entry.ContactName.Split(' ').First(),
+                LastName = entry.ContactName.Split(' ').Last(),
+                EmailAddress = entry.Email,
+                SoundOnFestivalSubscribe = 1
+              };
+              CrmService.CreateContact(contact);
             }
             catch (Exception ex)
             {
@@ -81,6 +103,15 @@ namespace MurdochFestival.Controllers
             {
               Context.TicketEntries.Add(entry);
               Context.SaveChanges();
+
+              var contact = new CrmContact
+              {
+                FirstName = entry.ContactName.Split(' ').First(),
+                LastName = entry.ContactName.Split(' ').Last(),
+                EmailAddress = entry.Email,
+                SoundOnFestivalTicket = 1
+              };
+              CrmService.CreateContact(contact);
             }
             catch (Exception ex)
             {
