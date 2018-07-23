@@ -4,6 +4,7 @@ using Microsoft.Extensions.Logging;
 using MurdochFestival.Data;
 using MurdochFestival.Logging;
 using MurdochFestival.Models.EF;
+using MurdochFestival.Models.Response;
 
 namespace MurdochFestival.Controllers
 {
@@ -29,18 +30,17 @@ namespace MurdochFestival.Controllers
               return BadRequest();
             }
 
-          try
-          {
-            Context.ContactUsEntries.Add(entry);
-            Context.SaveChanges();
-          }
-          catch (Exception ex)
-          {
-            Logger.LogError(LoggingEvents.ContactUsEntryPost, $"Post entry database save failed: {ex.StackTrace}");
-            return StatusCode(500);
-          }
-
-          return Ok();
+            try
+            {
+              Context.ContactUsEntries.Add(entry);
+              Context.SaveChanges();
+            }
+            catch (Exception ex)
+            {                           
+              Logger.LogError(LoggingEvents.ContactUsEntryPost, $"Post entry database save failed: {ex.StackTrace}");
+              return StatusCode(500, new SubmitResponse("An error has occurred, please try again later."));
+            }
+            return Ok(new SubmitResponse("Thanks for contacting us, we will be in touch shortly."));
         }
 
         ///POST /api/FormData/SubscribeSubmit
@@ -61,10 +61,10 @@ namespace MurdochFestival.Controllers
             catch (Exception ex)
             {
               Logger.LogError(LoggingEvents.SubscribeEntryPost, $"Post entry database save failed: {ex.StackTrace}");
-              return StatusCode(500);
+              return StatusCode(500, new SubmitResponse("An error has occurred, please try again later."));
             }
 
-            return Ok();
+          return Ok(new SubmitResponse("Thanks for subscribing!"));
         }
 
         ///POST /api/FormData/TicketSubmit
@@ -85,10 +85,10 @@ namespace MurdochFestival.Controllers
             catch (Exception ex)
             {
               Logger.LogError(LoggingEvents.TicketEntryPost, $"Post entry database save failed: {ex.StackTrace}");
-              return StatusCode(500);
+              return StatusCode(500, new SubmitResponse("An error has occurred, please try again later."));
             }
 
-            return Ok();
+          return Ok(new SubmitResponse("Thanks for requesting a ticket, we will be in touch shortly."));
         }
     }
 }
