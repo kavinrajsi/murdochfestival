@@ -64,12 +64,15 @@
                 }
             }
         }
-        
+
         &-heading{
             + .panel-collapse > .panel-body{
                 background:  $EerieBlack;
                 color: $White;
                 border: 0px;
+                .underline span{
+                  border-bottom: 1px solid $White;
+                }
             }
         }
 

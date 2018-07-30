@@ -16,11 +16,11 @@ export class Festival extends React.Component<{}, {}> {
                         <p>Getting to Sound On couldn't be easier! Free public transport is included in your ticket.</p>
                         <p>If your ticket includes the Transperth logo, just present it to Transperth staff and you won't need to pay a fare. Your event ticket is valid on Transperth for three hours before doors open and up to three hours after the event concludes.</p>
                         <p>Keep in mind you must have your event ticket on you to travel for no extra cost. If you are planning on collecting your ticket at the venue, you will need to pay a normal fare to get there.</p>
-                        Trains
+                        <p className="underline"> <span>Trains </span> </p>
                         <p>All train lines take you into Perth or Perth Underground stations, located only a short walk down Wellington Street to the Arena.</p>
-                        Buses
+                        <p className="underline"> <span>Buses </span> </p>
                         <p>Please check the timetable and plan your journey, as some timetabled services may not operate after evening events. Cat services are also available and include stops close to Perth Arena.</p>
-                        Driving
+                        <p className="underline"> <span>Driving </span> </p>
                         <p>Parking is available on-site. For directions on the best way to get to Perth Arena and where to park, check out the <a href="http://www.pertharena.com.au/Venue_Info/Getting_Here" target="_blank">Directions</a> page on their website.</p>
                         </Panel.Body>
                     </Panel>
