@@ -11,65 +11,58 @@ export class Experiences extends React.Component<{}, {}> {
                   <div className='list--experience__info with--image col-xs-12 col-sm-12'>
                     <div className='list--experience__image create-the-life-youwant'> </div>
                     <div>
-                      <h3 className='list--experience__info--title'>Create the life you want</h3>
-                      <p>It's easy to see people at the top and wonder - how the hell did they get there? In this super rare opportunity, we'll hang out with our headliners over an intimate chat where we'll get to know their stories and discover a few strategies for dealing with life, exams, and everything in between, so you can start building a life that excites you.</p>
+                      <h3 className='list--experience__info--title'>Create the life you want \ + music artist panel </h3>
+                      <p>It's easy to see people at the top and wonder how the hell they got there. In this exclusive Sound On experience, you'll hear how our headline acts have changed the game in their fields – and how they did it. Guided by The Indigo Project, we'll hang out with our headliners, personalities and Murdoch alumni over an intimate chat where we'll get to know their stories and discover the strategies they've used to deal with life, exams and everything in between. Leave ready to chase down some life goals of your own.</p>
                       </div>
                   </div>
 
                   <div className='list--experience__info with--image col-xs-12 col-sm-12'>
                     <div className='list--experience__image future-beats-experiences'> </div>
                     <div>
-                      <h3 className='list--experience__info--title'>Future beats experiences</h3>
-                      <p>What does the best version of your life look like? In this immersive music experience we'll use the power of sound to unlock your mind and take you on a journey into the future. With the arena speakers cranked to the max, you'll feel music in a whole new way and leave feeling one step closer to your dreams.</p>
+                      <h3 className='list--experience__info--title'>Future beats \ + The Indigo project </h3>
+                      <p>The Indigo Project brings their hypnotic and immersive Future Beats experience to Perth Arena. Using the power of sound, mindfulness, and music therapy you'll be guided through an immersive music experience that will let you be completely in the moment. With the arena speakers cranked to the max, you'll feel music in a whole new way and leave being able to harness music to tune out the sounds of everyday life, stress and anxiety – and tune in to where you want to go.</p>
                     </div>
                   </div>
 
                   <div className='list--experience col-xs-12'>
                      <div className='list--experience__info'>
                        <h3 className='list--experience__info--title'>Glitter bar</h3>
-                       <p>Add glam to your festival experience! Bring out your inner sparkle with some free glitter and face paint.</p>
+                       <p>Get #coachellavibes and glam it up at Sound On by adding some glitter to your festival experience. The best news? You'll get glam for free with our talented make-up artists on site for the whole afternoon.</p>
                      </div>
                    </div>
 
                   <div className='list--experience col-xs-12'>
                      <div className='list--experience__info'>
-                       <h3 className='list--experience__info--title'>Walter</h3>
-                       <p>Put your free-thinking skills to the test with Walter, the intelligent, interactive cube. Take on the Ultimate Walter Challenge to win some awesome prizes!</p>
+                       <h3 className='list--experience__info--title'>Ultimate Walter Challenge</h3>
+                       <p>Have some serious fun with Murdoch's resident Arena intellectual, Walter. Put your free-thinking skills to the test and challenge Walter to win some awesome prizes, including a VIP experience to a Perth Arena event.</p>
                      </div>
                    </div>
 
                    <div className='list--experience col-xs-12'>
                      <div className='list--experience__info'>
                        <h3 className='list--experience__info--title'>Photo Booth</h3>
-                       <p>The perfect opportunity to create a lasting memory of the day with you and your mates.</p>
+                       <p>Were you even at Sound On if you didn't put it on Insta? With heaps of fun options you can upload your booth snaps and share with your mates.</p>
                      </div>
                    </div>
 
                    <div className='list--experience col-xs-12'>
                      <div className='list--experience__info'>
-                       <h3 className='list--experience__info--title'>Gaming Lounge</h3>
-                       <p>A space for you and your mates to enjoy some friendly competition with a range of arcade games and activities.</p>
-                     </div>
-                   </div>
-
-                   <div className='list--experience col-xs-12'>
-                     <div className='list--experience__info'>
-                       <h3 className='list--experience__info--title'>Bicycle Powered Milkshakes</h3>
-                       <p>It's all in the name! There's never been a more entertaining way to create a delicious drink… </p>
+                       <h3 className='list--experience__info--title'>Gaming Zone</h3>
+                       <p>Get your game on and challenge your friends in the Gaming Zone. With an awesome range of arcade games, it's the perfect way to have some fun between sets. And watch out for the chance to challenge a big name from the line-up head to head.</p>
                      </div>
                    </div>
 
                    <div className='list--experience col-xs-12'>
                      <div className='list--experience__info'>
                        <h3 className='list--experience__info--title'>Chill Out Space</h3>
-                       <p>A space designed for you to escape the action packed day to relax, recharge and have a chat. Friendly staff will also be on hand to answer any questions. </p>
+                       <p>Need a break from it all? Head to the Chill Out zone, pull up a bean-bag and plan your next move with your friends.</p>
                      </div>
                    </div>
 
                    <div className='list--experience col-xs-12'>
                      <div className='list--experience__info'>
-                       <h3 className='list--experience__info--title'>Parents' Lounge </h3>
-                       <p>Just because the kids get to have fun, doesn't mean the parents can't too. There will be a dedicated parent zone available. </p>
+                       <h3 className='list--experience__info--title'>Parents Lounge</h3>
+                       <p>Just because the kids get to have fun, doesn't mean the parents can't too – away from the festival zone of course! There will be a dedicated space for parents and guardians to relax just outside the Arena, so you're close by but not cramping their style. Win-win.</p>
                      </div>
                    </div>
 

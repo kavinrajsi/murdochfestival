@@ -5,6 +5,7 @@ export class Hero extends React.Component<{}, {}> {
         return <div className='hero--banner'>
             <div className='container'>
             <div className='hero--banner__info'>
+              Murdoch university presents
             </div>
             <div className='hero--banner__mini-info'>
             <ul className='list-unstyled events-list'>

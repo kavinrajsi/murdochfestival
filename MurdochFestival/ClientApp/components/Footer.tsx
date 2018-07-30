@@ -21,21 +21,21 @@ export class Footer extends React.Component<{}, {cname: string,  cemail: string,
             temail: '',
             tsubmittedMessage: ''
         };
-    
+
         this.handleChange = this.handleChange.bind(this);
         this.handleContactUsSubmit = this.handleContactUsSubmit.bind(this);
         this.handleSubscribeSubmit = this.handleSubscribeSubmit.bind(this);
         this.handleTicketSubmit = this.handleTicketSubmit.bind(this);
         this.handleSubmitResponse = this.handleSubmitResponse.bind(this);
       }
-    
+
       handleChange(event:any) {
         this.setState({ [event.target.name]: event.target.value });
         //console.log(event.target.name + ": " + event.target.value);
       }
-    
+
       handleContactUsSubmit(event:any) {
-        
+
         const url = "/api/FormData/ContactUsSubmit";
         var data = { ContactName: this.state.cname, Email: this.state.cemail, ContactMessage: this.state.cmessage };
         fetch(url, {
@@ -47,7 +47,7 @@ export class Footer extends React.Component<{}, {cname: string,  cemail: string,
           .then(response => this.handleSubmitResponse('csubmittedMessage', response.message));
 
         //todo: success page/message
-        
+
         event.preventDefault();
       }
 
@@ -83,7 +83,7 @@ export class Footer extends React.Component<{}, {cname: string,  cemail: string,
         event.preventDefault();
       }
 
-      handleSubmitResponse(responseLabel:any, responseMessage:any) {        
+      handleSubmitResponse(responseLabel:any, responseMessage:any) {
         this.setState({ [responseLabel]: responseMessage });
       }
 
@@ -120,8 +120,8 @@ export class Footer extends React.Component<{}, {cname: string,  cemail: string,
         <h4 className="modal-title" id="contactus-address">Contact us</h4>
       </div>
       <div className="modal-body">
-       
-            { this.state.csubmittedMessage === '' ?                    
+
+            { this.state.csubmittedMessage === '' ?
                       <form onSubmit={this.handleContactUsSubmit} className='modal-form'>
                           <div className='form-group'>
                             <p>Got a question? Enter it below and we'll get back to you ASAP.</p>
@@ -142,7 +142,7 @@ export class Footer extends React.Component<{}, {cname: string,  cemail: string,
                               <input className='form-button' type="submit" value="Submit" />
                           </div>
                       </form>
-              : <label className="label-thanks">{this.state.csubmittedMessage}</label>   
+              : <label className="label-thanks">{this.state.csubmittedMessage}</label>
             }
 
       </div>
@@ -157,8 +157,8 @@ export class Footer extends React.Component<{}, {cname: string,  cemail: string,
         <button type="button" className="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span className="sr-only">Close</span></button>
         <h4 className="modal-title" id="stay-date">Stay up to date</h4>
       </div>
-      <div className="modal-body">        
-        { this.state.ssubmittedMessage === '' ?   
+      <div className="modal-body">
+        { this.state.ssubmittedMessage === '' ?
           <form onSubmit={this.handleSubscribeSubmit} className='modal-form formlable-with'>
             <div className='form-group'>
               <p>Keep your finger on the beat – subscribe to all the latest updates on festival times, venue info and everything else you need to know.</p>
@@ -175,7 +175,7 @@ export class Footer extends React.Component<{}, {cname: string,  cemail: string,
                   <input className='form-button' type="submit" value="Subscribe" />
               </div>
           </form>
-            : <label className="label-thanks">{this.state.ssubmittedMessage}</label>   
+            : <label className="label-thanks">{this.state.ssubmittedMessage}</label>
         }
       </div>
     </div>
@@ -190,7 +190,7 @@ export class Footer extends React.Component<{}, {cname: string,  cemail: string,
         <h4 className="modal-title" id="tickets">Tickets</h4>
       </div>
       <div className="modal-body">
-      { this.state.tsubmittedMessage === '' ?   
+      { this.state.tsubmittedMessage === '' ?
         <form onSubmit={this.handleTicketSubmit} className='modal-form formlable-with'>
             <div className='form-group'>
               <p>Don't be the last to know – submit your details to get notified as soon as tickets become available!</p>
@@ -207,7 +207,7 @@ export class Footer extends React.Component<{}, {cname: string,  cemail: string,
                 <input className='form-button' type="submit" value="Keep me posted" />
             </div>
         </form>
-            : <label className="label-thanks">{this.state.tsubmittedMessage}</label>   
+            : <label className="label-thanks">{this.state.tsubmittedMessage}</label>
         }
       </div>
     </div>
