@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "beautify.onSave": false,
+    "files.autoSave": "onFocusChange",
+    "editor.wordWrap": "on"
+}

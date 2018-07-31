@@ -1,16 +1,23 @@
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using MurdochFestival.Data;
 
 namespace MurdochFestival.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        private FormContext Context { get; }
+        private ILogger Logger { get; }
+
+        public HomeController(FormContext context, ILogger<HomeController> logService)
         {
+          Context = context;
+          Logger = logService;
+        }
+
+        public IActionResult Index()
+        {            
             return View();
         }
 

@@ -1,0 +1,76 @@
+%buy-tickets{
+  .button{
+    &--solid{
+      display: inline-block;
+      line-height: normal;
+      font-weight: 700;
+      letter-spacing: 1px;
+      background-color: #f58320;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $White;
+      padding: 22px;
+      font-size: 16px;
+      @media (min-width: 768px) {
+        font-size: 20px;
+        padding: 14px 22px 18px;
+        margin: 20px 0;
+        border: 1.5px solid $White;
+        background-color: $MexicanPink;
+      }
+      @media (min-width: 1200px) {
+        font-size: 26px;
+        padding: 14px 42px 18px;
+        margin: 20px 0;
+        border: 1.5px solid $White;
+        background-color: $MexicanPink;
+      }
+      &:after{
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-left: 20px;
+        @media (min-width: 768px) {
+          width: 24px;
+          height: 24px;
+        }
+        @media (min-width: 992px) {
+          margin-left: 38px;
+        }
+        background-image: url('../image/icon-link.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+%arrow{
+  content: '';
+  display: block;
+  width: 33px;
+  height: 14px;
+  margin: 0px auto;
+  background-image: url('../image/scroll-down-arrow.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.list--wrapper{
+  & + .button{
+    text-align: center;
+    a{
+      font-size: 24px;
+      font-weight: 700;
+      color: $EerieBlack;
+      text-transform: uppercase;
+      text-decoration: none;
+      &:after{
+        @extend %arrow;
+        background-image: url('../image/scroll-down-arrow-color.png');
+       }
+    }
+  }
+}

@@ -1,40 +1,59 @@
 import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 import { Link, NavLink } from 'react-router-dom';
 
-export class NavMenu extends React.Component<{}, {}> {
+export class NavMenu extends React.Component<{}, { isTop: true }> {
+    constructor(props:any) {
+        super(props);
+        this.state = {
+            isTop: true
+        };
+    
+
+        this.onScroll = this.onScroll.bind(this);
+
+      }
+      componentDidMount() {
+        document.addEventListener('scroll', () => {
+          const isTop = window.scrollY < 100;
+          if (isTop !== this.state.isTop) {
+            this.onScroll(isTop);
+          }
+        });
+      }
+    
+      onScroll(isTop:any) {
+        this.setState({ isTop });
+      }
+
     public render() {
-        return <div className='main-nav'>
-                <div className='navbar navbar-inverse'>
-                <div className='navbar-header'>
-                    <button type='button' className='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
-                        <span className='sr-only'>Toggle navigation</span>
-                        <span className='icon-bar'></span>
-                        <span className='icon-bar'></span>
-                        <span className='icon-bar'></span>
-                    </button>
-                    <Link className='navbar-brand' to={ '/' }>MurdochFestival</Link>
-                </div>
-                <div className='clearfix'></div>
-                <div className='navbar-collapse collapse'>
-                    <ul className='nav navbar-nav'>
-                        <li>
-                            <NavLink to={ '/' } exact activeClassName='active'>
-                                <span className='glyphicon glyphicon-home'></span> Home
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink to={ '/counter' } activeClassName='active'>
-                                <span className='glyphicon glyphicon-education'></span> Counter
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink to={ '/fetchdata' } activeClassName='active'>
-                                <span className='glyphicon glyphicon-th-list'></span> Fetch data
-                            </NavLink>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>;
+        return <nav className='menu--bar'>
+                    <div className='menu--navigation'>
+                    
+                        <div id="nav-burgermenu">
+                            <span className='buger-menu-icon'></span>
+                        </div>
+                        <ul data-role="menu" className='menu list-inline' >
+                            <li className="menu--item visible-xs">
+                                <a className="menu--item__link menu-buytickets" href="#" data-toggle="modal" data-target="#tickets" >Buy Tickets</a>
+                            </li>
+                            <li className="menu--item">
+                                <a className="menu--item__link" href="#artists">Artists</a>
+                            </li>
+                            <li className="menu--item">
+                                <a className="menu--item__link" href="#experiences">Experiences</a>
+                            </li>
+                            <li className="menu--item">
+                                <a className="menu--item__link" href="#festival-info">Festival Info</a>
+                            </li>
+                            <li className="menu--item">
+                                <a className="menu--item__link" href="#" data-toggle="modal" data-target="#stay-date">Subscribe</a>
+                            </li>
+                        </ul>
+                        <div className="masterbar--button">
+                            <a className="button--solid" href="#" data-toggle="modal" data-target="#tickets" >Buy Tickets</a>
+                        </div>
+                    </div>
+                </nav>;
     }
 }

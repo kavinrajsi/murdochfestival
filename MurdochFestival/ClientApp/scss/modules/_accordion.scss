@@ -1,0 +1,80 @@
+.panel-group{
+    padding: 0px 15px;
+    margin-bottom: 0px;
+    .panel{
+        & + .panel{
+           margin-top: 0px;
+        }
+        margin: 0px 0px 10px;
+        @media (min-width: 768px){
+            margin-bottom: 20px;
+        }
+        &:last-child{
+            margin-bottom: 0px;
+        }
+        &-default{
+            border: 0px;
+            border-radius: 0px;
+            box-shadow: none;
+        }
+        &-heading{
+            background: $EerieBlack;
+            border: 0px;
+            border-radius: 0px;
+            padding: 0px;
+        }
+        &-title{
+            a{
+                display: block;
+                color: #fff;
+                line-height: normal;
+                font-weight: 700;
+                text-align: center;
+                text-transform: uppercase;
+                text-decoration: none;
+                position: relative;
+                font-size: 18px;
+                padding: 8px 50px;
+                @media (min-width: 768px){
+                    font-size: 23px;
+                    padding: 17px 0px;
+                }
+                &:after{
+                    content: '';
+                    display: inline-block;
+                    width: 33px;
+                    height: 33px;
+                    margin: 0px auto;
+                    background-image: url('../image/scroll-down-arrow.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    transform: rotate(180deg);
+                    position: absolute;
+                    top: calc(50% - 14px);
+                    right: 17px;
+                    @media (min-width: 768px){
+                        right: 35px;
+                    }
+                }
+                &.collapsed{
+                    &:after{
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+        }
+
+        &-heading{
+            + .panel-collapse > .panel-body{
+                background:  $EerieBlack;
+                color: $White;
+                border: 0px;
+                .underline span{
+                  border-bottom: 1px solid $White;
+                }
+            }
+        }
+
+    }
+}

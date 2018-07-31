@@ -1,0 +1,42 @@
+/* Colours */
+$White: #FFFFFF;
+$Black: #000000;
+$MexicanPink: #eb008b;
+$EerieBlack: #0c182b;
+$RichBlack: #0d182b;
+$MiddleBlueGreen: #7adbd4;
+$PearlAqua: #70d4c9;
+$VividCerise: #ed1e79;
+$Dandelion: #f8e525;
+
+html, body, h1, h2, h3, h4, h5, h6, p, span, label, input, a {
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+}
+
+body {
+  padding-top: 70px;
+  @media (min-width: 768px) {
+    padding-top: 142px;
+  }
+  background-color: $MiddleBlueGreen;
+}
+p:last-child{
+  margin-bottom: 0px !important;
+}
+a:focus,
+button{
+  outline: 0px;
+}
+
+.section{
+  &--artists,
+  &--experiences,
+  &--festival{
+    margin-bottom: 40px;
+    @media (min-width: 768px) {
+      margin-bottom: 134px;
+    }
+  }  
+}

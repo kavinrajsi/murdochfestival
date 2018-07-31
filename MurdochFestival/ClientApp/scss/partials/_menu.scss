@@ -1,0 +1,192 @@
+.nav--dark_bg{
+  background: rgba(236,13,136,1);
+  @media (min-width: 768px) {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(236,13,136,1)), color-stop(50%, rgba(245,131,32,1)), to(rgba(251,243,23,1)));
+    background: -webkit-linear-gradient(left, rgba(236,13,136,1) 0%, rgba(245,131,32,1) 50%, rgba(251,243,23,1) 100%);
+    background: -o-linear-gradient(left, rgba(236,13,136,1) 0%, rgba(245,131,32,1) 50%, rgba(251,243,23,1) 100%);
+    background: linear-gradient(to right, rgba(236,13,136,1) 0%, rgba(245,131,32,1) 50%, rgba(251,243,23,1) 100%);
+    .navbar-fixed-top{
+      border: 0px;
+    }
+  }
+.menu--bar{
+  width: 100%;
+  margin: 0px auto;
+  @media (min-width: 768px) {
+    width: 750px;
+  }
+  @media (min-width: 992px) {
+    width: 970px;
+  }
+  @media (min-width: 1200px) {
+    width: 1170px;
+  }
+}
+  .menu--navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+   /* menu icon */
+   #nav-burgermenu {
+     &.active{
+      @include z-index(menuicon);
+      left: initial;
+      right: 20px;
+      position: absolute;
+      top: 15px;
+     }
+      overflow: hidden;
+      @media (min-width: 768px) {
+        display: none;
+      }
+      display: block;
+      position: relative;
+      height: 30px;
+      width: 30px;
+      cursor: pointer;
+      left: 15px;
+      top: 0px;
+        .buger-menu-icon {
+            cursor: pointer;
+            height: 2px;
+            width: 30px;
+            background: $White;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            display: block;
+            content: '';
+            right: 0px;
+            padding: 0px 5px;
+            transition: all 0.5s ease-in-out;
+            &:before,
+            &:after {
+                cursor: pointer;
+                border-radius: 1px;
+                height: 2px;
+                width: 30px;
+                background: #fff;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                display: block;
+                content: '';
+                right: 0px;
+                padding: 0px 5px;
+                transition: all 0.5s ease-in-out;
+            }
+            &:before {
+              top: -10px;
+            }
+            &:after {
+              top: 10px;
+            }
+            /* active */
+            &.active {
+                width: 0px;
+                height: 0px;
+                &:before,
+                &:after {
+                  top: 0px;
+                }
+                &:before {
+                  transform: rotate(135deg);
+                }
+                &:after {
+                  transform: rotate(-135deg);
+                }
+            }
+        }
+    }
+
+    .menu{
+      display: none;
+      @media (min-width: 768px) {
+        display: block;
+      }
+      margin: 0px;
+      &--item{
+        padding: 0px;
+         &__link{
+          font-size: 16px;
+          font-weight: 700;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: $White;
+          padding: 0px 30px;
+
+            @media (min-width: 1024px) {
+                font-size: 18px;
+                padding: 0 40px;
+            }
+            @media (min-width: 1200px) {
+                font-size: 20px;
+                padding: 0 60px;
+            }
+          &:first-child{
+            padding-left: 0px;
+          }
+         }
+      }
+      &.menu-drawer-open{
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        margin: 0px;
+        background: rgba(250,220,28,1);
+        background: -moz-linear-gradient(45deg, rgba(250,220,28,1) 0%, rgba(255,128,0,1) 27%, rgba(235,17,126,1) 100%);
+        background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(250,220,28,1)), color-stop(27%, rgba(255,128,0,1)), color-stop(100%, rgba(235,17,126,1)));
+        background: -webkit-linear-gradient(45deg, rgba(250,220,28,1) 0%, rgba(255,128,0,1) 27%, rgba(235,17,126,1) 100%);
+        background: -o-linear-gradient(45deg, rgba(250,220,28,1) 0%, rgba(255,128,0,1) 27%, rgba(235,17,126,1) 100%);
+        background: -ms-linear-gradient(45deg, rgba(250,220,28,1) 0%, rgba(255,128,0,1) 27%, rgba(235,17,126,1) 100%);
+        background: linear-gradient(45deg, rgba(250,220,28,1) 0%, rgba(255,128,0,1) 27%, rgba(235,17,126,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fadc1c', endColorstr='#eb117e', GradientType=1 );
+        padding: 60px 20px 10px;
+        flex-direction: column;
+          .menu--item{
+            padding: 10px;
+          }
+      }
+    }
+    .masterbar--button{
+      @extend %buy-tickets;
+    }
+    @media (min-width: 768px) {
+      &.scrolling-up{
+        .masterbar--button{
+          .button--solid{
+            margin: 14px auto;
+            padding: 14px;
+            font-size: 16px;
+            &:after{
+              margin-left: 16px;
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu--item__link{
+  &.menu-buytickets{
+    &:after{
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-left: 20px;
+      background-image: url('../image/icon-link.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+} 
