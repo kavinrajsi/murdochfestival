@@ -15,8 +15,8 @@ export class Hero extends React.Component<{}, {}> {
             </ul>
             <ul className='list-unstyled event-time-venue'>
                 <li>Sept 28 / 3-9:30PM</li>
-                <li>An event for 14 - 18 year olds</li>
-                <li>drug &amp; alcohol free</li>
+                <li>An event for 14 - 18 year old high school students</li>
+                <li>Drug &amp; alcohol free</li>
             </ul>
             </div>
             <div className='scroll-down'>

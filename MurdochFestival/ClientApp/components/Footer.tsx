@@ -7,7 +7,7 @@ const indigo_logos = require('../image/footer/indigo-logos.png');
 const ticketek = require('../image/footer/ticketek.png');
 const murdoch = require('../image/footer/murdoch.png');
 
-export class Footer extends React.Component<{}, {cname: string,  cemail: string,  cmessage: string, csubmittedMessage: string, sname: string, semail: string, ssubmittedMessage: string, tname: string, temail: string, tsubmittedMessage: string}> {
+export class Footer extends React.Component<{}, {cname: string,  cemail: string,  cmessage: string, csubmittedMessage: string, sname: string, semail: string, ssubmittedMessage: string, tname: string, temail: string, tsubmittedMessage: string, isChecked: boolean}> {
     constructor(props:any) {
         super(props);
         this.state = {
@@ -20,7 +20,8 @@ export class Footer extends React.Component<{}, {cname: string,  cemail: string,
             ssubmittedMessage: '',
             tname: '',
             temail: '',
-            tsubmittedMessage: ''
+            tsubmittedMessage: '',
+            isChecked:false
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -28,6 +29,11 @@ export class Footer extends React.Component<{}, {cname: string,  cemail: string,
         this.handleSubscribeSubmit = this.handleSubscribeSubmit.bind(this);
         this.handleTicketSubmit = this.handleTicketSubmit.bind(this);
         this.handleSubmitResponse = this.handleSubmitResponse.bind(this);
+        this.handleChecked = this.handleChecked.bind(this);
+      }
+
+      handleChecked(){
+        this.setState({ isChecked: !(this.state.isChecked) });
       }
 
       handleChange(event:any) {
@@ -101,7 +107,7 @@ export class Footer extends React.Component<{}, {cname: string,  cemail: string,
                     <address>
                         <span>Perth Arena</span>
                         <span><a href="http://www.pertharena.com.au/Venue_Info/Getting_Here" target="_blank">Get directions</a></span>
-                        <span><a href="http://premier.ticketek.com.au/" target="_blank">Tickets available through Ticketek</a></span>
+                        <span><a href="http://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18" target="_blank">Tickets available through Ticketek</a></span>
                     </address>
                 </div>
             </div>
@@ -141,6 +147,12 @@ export class Footer extends React.Component<{}, {cname: string,  cemail: string,
                               <textarea className='form-control' placeholder='Message' name="cmessage" value={this.state.cmessage} onChange={this.handleChange} />
                           </div>
                           <div className='form-group'>
+                            <label className="checkboxs">I would like to receive more information about Sound On Festival, and I have read and understand and accept the privacy policy.
+                              <input type="checkbox" defaultChecked = {this.state.isChecked}  onChange = {this.handleChecked} />
+                              <span className="checkmark"></span>
+                            </label>
+                          </div>
+                          <div className='form-group'>
                               <input className='form-button' type="submit" value="Submit" />
                           </div>
                       </form>
@@ -174,6 +186,12 @@ export class Footer extends React.Component<{}, {cname: string,  cemail: string,
                   <input className='form-control' value={this.state.semail} name='semail' onChange={this.handleChange} />
               </div>
               <div className='form-group'>
+                <label className="checkboxs">I would like to receive more information about Sound On Festival, and I have read and understand and accept the privacy policy.
+                  <input type="checkbox" defaultChecked = {this.state.isChecked}  onChange = {this.handleChecked} />
+                  <span className="checkmark"></span>
+                </label>
+              </div>
+              <div className='form-group'>
                   <input className='form-button' type="submit" value="Subscribe" />
               </div>
           </form>
@@ -184,37 +202,7 @@ export class Footer extends React.Component<{}, {cname: string,  cemail: string,
   </div>
 </div>
 
-<div className="modal fade" id="tickets"  role="dialog" aria-labelledby="tickets" aria-hidden="true">
-  <div className="modal-dialog">
-    <div className="modal-content">
-      <div className="modal-header">
-        <button type="button" className="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span className="sr-only">Close</span></button>
-        <h4 className="modal-title" id="tickets">Tickets</h4>
-      </div>
-      <div className="modal-body">
-      { this.state.tsubmittedMessage === '' ?
-        <form onSubmit={this.handleTicketSubmit} className='modal-form formlable-with'>
-            <div className='form-group'>
-              <p>Don't be the last to know – submit your details to get notified as soon as tickets become available!</p>
-            </div>
-            <div className='form-group'>
-                <label className='lable-form'>Name</label>
-                <input className='form-control' name="tname" value={this.state.tname} onChange={this.handleChange} />
-            </div>
-            <div className='form-group'>
-                <label className='lable-form'>Email</label>
-                <input className='form-control' name="temail" value={this.state.temail} onChange={this.handleChange} />
-            </div>
-            <div className='form-group'>
-                <input className='form-button' type="submit" value="Keep me posted" />
-            </div>
-        </form>
-            : <label className="label-thanks">{this.state.tsubmittedMessage}</label>
-        }
-      </div>
-    </div>
-  </div>
-</div>
+
 
         </div>;
     }

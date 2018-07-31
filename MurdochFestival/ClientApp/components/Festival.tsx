@@ -29,8 +29,8 @@ export class Festival extends React.Component<{}, {}> {
                             <Panel.Title toggle>Who can go</Panel.Title>
                         </Panel.Heading>
                         <Panel.Body collapsible>
-                        <p>Sound On is an exclusive drug and alcohol free festival for 14-18 year olds only.</p>
-                        <p>Parents and guardians are welcome to relax in the dedicated parent zone at the Arena, or explore the city sites in the vicinity. </p>
+                        <p>Sound On is an exclusive drug and alcohol free festival for 14-18 year old high school students only.</p>
+                        <p>Parents and guardians are welcome to relax in the dedicated parent zone at the Arena, or explore the city sites in the vicinity.</p>
                         </Panel.Body>
                     </Panel>
                     <Panel eventKey="3">
@@ -53,7 +53,7 @@ export class Festival extends React.Component<{}, {}> {
                             <li>Venue parking</li>
                             <li>Box Office ticketing</li>
                           </ul>
-                        <p>Check out the venue facilities on the <a href="#">Perth Arena website</a>.</p></Panel.Body>
+                        <p>Check out the venue facilities on the <a href="http://www.pertharena.com.au" target="_blank">Perth Arena website</a>.</p></Panel.Body>
                     </Panel>
                     <Panel eventKey="5">
                         <Panel.Heading>
@@ -92,7 +92,7 @@ export class Festival extends React.Component<{}, {}> {
                         <Panel.Heading>
                             <Panel.Title toggle>Ticket info</Panel.Title>
                         </Panel.Heading>
-                        <Panel.Body collapsible><p>Grab your tickets from <a href="#" target="_blank">Ticketek</a> or purchase them on the day at Perth Arena (if not sold out prior!).</p><p>Tickets are just $40 + booking fee, so make sure you get in early.</p></Panel.Body>
+                        <Panel.Body collapsible><p>Grab your tickets from <a href="http://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18" target="_blank">Ticketek</a> or purchase them on the day at Perth Arena (if not sold out prior!).</p><p>Tickets are just $40 + booking fee, so make sure you get in early.</p></Panel.Body>
                     </Panel>
                     <Panel eventKey="7">
                         <Panel.Heading>

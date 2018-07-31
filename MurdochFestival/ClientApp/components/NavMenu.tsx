@@ -51,7 +51,7 @@ export class NavMenu extends React.Component<{}, { isTop: true }> {
                             </li>
                         </ul>
                         <div className="masterbar--button">
-                            <a className="button--solid" href="#" data-toggle="modal" data-target="#tickets" >Buy Tickets</a>
+                            <a className="button--solid" href="http://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18" target="_blank">Buy Tickets</a>
                         </div>
                     </div>
                 </nav>;
