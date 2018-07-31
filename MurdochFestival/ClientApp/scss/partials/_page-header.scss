@@ -1,8 +1,8 @@
 .hero--banner{
-  height: calc(100vh - 70px);
+  // height: calc(100vh - 100px);
+  height: 100vh;
   padding-bottom: 40px;
   @media (min-width: 768px) {
-    height: 80vh;
     padding-bottom: 68px;
   }
   position: relative;
@@ -13,7 +13,7 @@
     text-align: right;
     color: $White;
     text-transform: uppercase;
-    height: 65vh;
+    height: 72vh;
     justify-content: space-between;
      .events-list{
        margin-top: 20px;
@@ -37,23 +37,18 @@
         text-align: right;
       }
       li{
+        color: $Black;
+        font-size: 16px;
         &:first-child{
           @include interpolate("font-size", 768px, 20px, 1200px, 30px, "ease-in");
-        }
-        &:last-child{
-          color: $Black;
-          font-size: 16px;
+          color: $White;
         }
       }
     }
   }
   .scroll-down{
-    position: absolute;
-    bottom: 30px;
-    left: 0px;
-    right: 0px;
-    text-align: center;
     @include z-index(scrolldown);
+    position: relative;
     .button{
       &--out__more{
         color: $White;
@@ -64,6 +59,14 @@
         text-align: center;
         display: inline-block;
         text-decoration: none;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: -50px;
+        @media (min-width: 768px){
+          right: 0px;
+          left: initial;
+        }
         &:after{
          @extend %arrow;
         }

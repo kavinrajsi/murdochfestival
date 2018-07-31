@@ -2,8 +2,9 @@ import * as React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 const transperth = require('../image/footer/transperth.png');
-const hit92 = require('../image/footer/hit-92-9.png');
 const pertharena = require('../image/footer/perth-arena.png');
+const indigo_logos = require('../image/footer/indigo-logos.png');
+const ticketek = require('../image/footer/ticketek.png');
 const murdoch = require('../image/footer/murdoch.png');
 
 export class Footer extends React.Component<{}, {cname: string,  cemail: string,  cmessage: string, csubmittedMessage: string, sname: string, semail: string, ssubmittedMessage: string, tname: string, temail: string, tsubmittedMessage: string}> {
@@ -94,21 +95,22 @@ export class Footer extends React.Component<{}, {cname: string,  cemail: string,
                 <div className='copyrights--nav'>
                     <a href="#" data-toggle="modal" data-target="#contactus-address">/ Contact</a>
                     <a href="#">/ Terms of Entry</a>
-                    <a href="https://policy.murdoch.edu.au/dotNet/documents/?docid=2155&public=true" >/ Privacy Policy</a>
+                    <a href="https://goto.murdoch.edu.au/Privacy" target="_blank">/ Privacy Policy</a>
                 </div>
                 <div className='footer--address'>
                     <address>
                         <span>Perth Arena</span>
-                        <span>700 Wellington St, Perth WA 6000</span>
-                        <span>(08) 6365 0700</span>
+                        <span><a href="http://www.pertharena.com.au/Venue_Info/Getting_Here" target="_blank">Get directions</a></span>
+                        <span><a href="http://premier.ticketek.com.au/" target="_blank">Tickets available through Ticketek</a></span>
                     </address>
                 </div>
             </div>
             <div className='footer--icons'>
-                <a href='https://www.transperth.wa.gov.au/' target="_blank"> <img alt='transperth' src={String(transperth)} /> </a>
-                <a href='https://www.hit.com.au/perth' target="_blank"> <img alt='hit-92.9' src={String(hit92)} /> </a>
-                <a href='http://www.pertharena.com.au/' target="_blank"> <img alt='perth-arena' src={String(pertharena)}  /> </a>
-                <a href='http://www.murdoch.edu.au' target="_blank"> <img alt='murdoch' src={String(murdoch)} /> </a>
+                <a href='https://www.transperth.wa.gov.au/' target="_blank"> <img alt='Transperth' src={String(transperth)} /> </a>
+                <a href='http://www.pertharena.com.au/' target="_blank"> <img alt='Perth Arena' src={String(pertharena)}  /> </a>
+                <a href='http://premier.ticketek.com.au/' target="_blank"> <img alt='Ticketek' src={String(ticketek)} /> </a>
+                <a href='https://www.theindigoproject.com.au/' target="_blank"> <img alt='Indigo Logo' src={String(indigo_logos)} /> </a>
+                <a href='http://www.murdoch.edu.au/' target="_blank"> <img alt='Murdoch' src={String(murdoch)} /> </a>
             </div>
             </div>
 

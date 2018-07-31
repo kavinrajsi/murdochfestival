@@ -18,7 +18,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, {}> {
             <section id='experiences' className='section--experiences'>
                 <Experiences />
             </section>
-            <section id='festival-info' className='section--festival'>
+            <section id='info' className='section--festival'>
                 <Festival />
             </section>
         </div>;

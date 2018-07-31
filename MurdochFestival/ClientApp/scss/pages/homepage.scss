@@ -39,7 +39,7 @@
         position: absolute;
         top: 0px;
         left: 0px;
-        background-color: rgba($color: #39383a, $alpha: 0.30);
+        background-color: rgba($color: #39383a, $alpha: 0.60);
       }
       }
       &__info{
@@ -225,16 +225,11 @@
           background-position: top center;
         }
         &.future-beats-experiences{
-          display: none;
-        }
-        @media (min-width: 720px){
-          &.future-beats-experiences{
-            display: block;
-            background-image: url('../image/experiences/future-beats-experiences.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: top center;
-          }
+          display: block;
+          background-image: url('../image/experiences/future-beats-experiences.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: top center;
         }
       }
     }

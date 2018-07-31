@@ -6,7 +6,7 @@ export class Festival extends React.Component<{}, {}> {
     public render() {
         return <div className='container'>
             <div className='row'>
-                <h2 className='left l-section-title'>Festival Info</h2>
+                <h2 className='left l-section-title'>Info</h2>
                 <PanelGroup accordion id="accordion-example">
                     <Panel eventKey="1">
                         <Panel.Heading>
