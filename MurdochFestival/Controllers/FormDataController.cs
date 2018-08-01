@@ -17,12 +17,14 @@ namespace MurdochFestival.Controllers
         private FormContext Context { get; }
         private ILogger Logger { get; }
         private ICrmService CrmService { get; }
+        private IEmailService EmailService { get; }
     
-        public FormDataController(FormContext context, ILogger<HomeController> logService, ICrmService crmService)
+        public FormDataController(FormContext context, ILogger<HomeController> logService, ICrmService crmService, IEmailService emailService)
         {
           Context = context;
           Logger = logService;
           CrmService = crmService;
+          EmailService = emailService;
         }
 
         ///POST /api/FormData/ContactUsSubmit
@@ -37,9 +39,14 @@ namespace MurdochFestival.Controllers
 
             try
             {
+              //Save to Database
               Context.ContactUsEntries.Add(entry);
               Context.SaveChanges();
-        
+
+              //Send Email
+              EmailService.SendContactUsSystemEmail(entry);
+
+              //Send to CRM
               var contact = new CrmContact
               {
                 FirstName = entry.ContactName.Split(' ').First(),
