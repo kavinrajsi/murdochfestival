@@ -1,4 +1,4 @@
-.hero--banner{
+.hero--banner {
   // height: calc(100vh - 100px);
   height: 100vh;
   padding-bottom: 40px;
@@ -42,6 +42,10 @@
         &:first-child{
           @include interpolate("font-size", 768px, 20px, 1200px, 30px, "ease-in");
           color: $White;
+
+          @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) {
+            color: $Black;
+          }
         }
       }
     }
