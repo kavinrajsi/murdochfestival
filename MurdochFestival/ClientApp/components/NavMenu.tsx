@@ -8,7 +8,7 @@ export class NavMenu extends React.Component<{}, { isTop: true }> {
         this.state = {
             isTop: true
         };
-    
+
 
         this.onScroll = this.onScroll.bind(this);
 
@@ -21,7 +21,7 @@ export class NavMenu extends React.Component<{}, { isTop: true }> {
           }
         });
       }
-    
+
       onScroll(isTop:any) {
         this.setState({ isTop });
       }
@@ -29,7 +29,7 @@ export class NavMenu extends React.Component<{}, { isTop: true }> {
     public render() {
         return <nav className='menu--bar'>
                     <div className='menu--navigation'>
-                    
+
                         <div id="nav-burgermenu">
                             <span className='buger-menu-icon'></span>
                         </div>
@@ -44,14 +44,14 @@ export class NavMenu extends React.Component<{}, { isTop: true }> {
                                 <a className="menu--item__link" href="#experiences">Experiences</a>
                             </li>
                             <li className="menu--item">
-                                <a className="menu--item__link" href="#festival-info">Festival Info</a>
+                                <a className="menu--item__link" href="#info">Info</a>
                             </li>
                             <li className="menu--item">
                                 <a className="menu--item__link" href="#" data-toggle="modal" data-target="#stay-date">Subscribe</a>
                             </li>
                         </ul>
                         <div className="masterbar--button">
-                            <a className="button--solid" href="#" data-toggle="modal" data-target="#tickets" >Buy Tickets</a>
+                            <a className="button--solid" href="http://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18" target="_blank">Buy Tickets</a>
                         </div>
                     </div>
                 </nav>;
