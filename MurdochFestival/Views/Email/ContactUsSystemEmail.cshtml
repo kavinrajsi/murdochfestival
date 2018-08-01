@@ -1,0 +1,15 @@
+@using System.ComponentModel.DataAnnotations
+@using MurdochFestival.Models.Email
+@model ContactUsSystemEmail
+
+The following user has submitted a Contact Us form:
+
+<p>
+  @Model.ContactUsEntry.Email
+</p>
+<p>
+  @Model.ContactUsEntry.ContactName
+</p>
+<p>
+  @Model.ContactUsEntry.ContactMessage
+</p>
