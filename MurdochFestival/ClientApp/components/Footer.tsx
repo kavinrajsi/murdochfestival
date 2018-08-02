@@ -132,7 +132,9 @@ export class Footer extends React.Component<{}, {cname: string,  cemail: string,
             { this.state.csubmittedMessage === '' ?
                       <form onSubmit={this.handleContactUsSubmit} className='modal-form'>
                           <div className='form-group'>
-                            <p>Got a question? Enter it below and we'll get back to you ASAP.</p>
+                            <p>Please read the <a href="#info" id="info_link">info section</a> on this website before sending an enquiry.</p>
+                            <p>Ticketing enquiries &amp; support. Please contact <a href="https://premier.ticketek.com.au/content/help/contactus.aspx" target="_blank">Ticketek</a>.</p>
+                            <p>General, promoter and PR enquiries</p>
                           </div>
                           <div className='form-group'>
                               <label className='lable-form'>Name:</label>

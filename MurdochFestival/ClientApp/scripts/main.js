@@ -4,7 +4,7 @@ window.$ = $;
 
 $(document).ready(function() {
     $('.menu--item__link:not([data-toggle]), .button--out__more').click(function(e) {
-        e.preventDefault();
+        // e.preventDefault();
         var target = $(this).attr('href');
 
         var headerHeight = $('.nav--dark_bg').height();
@@ -34,5 +34,14 @@ $(document).ready(function() {
             $(menuList).toggleClass('menu-drawer-open');
         }
     });
+
+    $('#info_link').click(function(e){
+      e.preventDefault();
+      var target = $(this).attr('href');
+      $('#contactus-address').modal('hide');
+      $('html, body').animate({
+        scrollTop: $(target).offset().top - 110
+    }, 400);
+  });
 
 });
