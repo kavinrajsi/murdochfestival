@@ -84,5 +84,7 @@
       </ResolvedFileToPublish>
     </ItemGroup>
   </Target>
+  
+  <MvcRazorCompileOnPublish>false</MvcRazorCompileOnPublish>
 
 </Project>
