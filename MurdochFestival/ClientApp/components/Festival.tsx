@@ -92,7 +92,7 @@ export class Festival extends React.Component<{}, {}> {
                         <Panel.Heading>
                             <Panel.Title toggle>Ticket info</Panel.Title>
                         </Panel.Heading>
-                        <Panel.Body collapsible><p>Grab your tickets from <a href="http://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18" target="_blank">Ticketek</a> or purchase them on the day at Perth Arena (if not sold out prior!).</p><p>Tickets are just $40 + booking fee, so make sure you get in early.</p></Panel.Body>
+                        <Panel.Body collapsible><p>Grab your tickets from <a href="http://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18" target="_blank">Ticketek</a> or purchase them on the day at Perth Arena (if not sold out prior!).</p><p>Tickets are just $39.95, so make sure you get in early.</p></Panel.Body>
                     </Panel>
                     <Panel eventKey="7">
                         <Panel.Heading>
