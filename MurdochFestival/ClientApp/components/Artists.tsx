@@ -47,12 +47,12 @@ export class Artists extends React.Component<{}, {}> {
                      <div className='grid--artist__image FlexMami'> </div>
                      <div className='grid--artist__info'>
                        <h3 className='grid--artist__info--title'>FlexMami</h3>
-                       <p>Internet sensation, life coach legend and disc jockey extraordinaire, FlexMami is the self-described ultimate slashie with side-hustles across TV, radio and fashion. Flex will bring her DJ-ing prowess to Perth ft. Rap and R&B track mixes.</p>
+                       <p>Internet sensation, life coach legend and disc jockey extraordinaire, FlexMami will bring her DJ-ing prowess to Perth ft. Rap and R&amp;B track mixes.</p>
                      </div>
                    </div>                   
                  </div>
                  <div className="grid--artist grid--artist__info--more col-xs-12">
-                  <p>Plus dj shann, the indigo project, and more…</p>
+                  <p>Plus dj shann, the indigo project, and more</p>
                  </div>
                </div>
             </div>
