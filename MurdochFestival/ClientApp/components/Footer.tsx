@@ -19,8 +19,8 @@ export class Footer extends React.Component<{}, {}> {
             <div className='footer--information'>
             <div className='footer--nav'>
                 <div className='copyrights--nav'>
-                    <a href="#" data-toggle="modal" data-target="#contactus-address">/ Contact</a>
-                    <a href="#">/ Terms of Entry</a>
+                    <a href="#" data-toggle="modal" data-target="#contactus-address">/ Contact Us</a>
+                    {/*<a href="#">/ Terms of Entry</a>*/} 
                     <a href="https://goto.murdoch.edu.au/Privacy" target="_blank">/ Privacy Policy</a>
                 </div>
                 <div className='footer--address'>
@@ -33,10 +33,10 @@ export class Footer extends React.Component<{}, {}> {
             </div>
             <div className='footer--icons'>
                 <a href='https://www.transperth.wa.gov.au/' target="_blank"> <img alt='Transperth' src={String(transperth)} /> </a>
-                <a href='http://www.pertharena.com.au/' target="_blank"> <img alt='Perth Arena' src={String(pertharena)}  /> </a>
-                <a href='http://premier.ticketek.com.au/' target="_blank"> <img alt='Ticketek' src={String(ticketek)} /> </a>
+                <a href='http://www.pertharena.com.au/Events' target="_blank"> <img alt='Perth Arena' src={String(pertharena)}  /> </a>
+                <a href='http://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18' target="_blank"> <img alt='Ticketek' src={String(ticketek)} /> </a>
                 <a href='https://www.theindigoproject.com.au/' target="_blank"> <img alt='Indigo Logo' src={String(indigo_logos)} /> </a>
-                <a href='http://www.murdoch.edu.au/' target="_blank"> <img alt='Murdoch' src={String(murdoch)} /> </a>
+                <a href='http://www.murdoch.edu.au/study' target="_blank"> <img alt='Murdoch' src={String(murdoch)} /> </a>
             </div>
             </div>
 
