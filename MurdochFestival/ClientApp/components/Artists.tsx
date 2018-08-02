@@ -22,14 +22,6 @@ export class Artists extends React.Component<{}, {}> {
                        <p>Sydney twins Cosmo and Patrick Liney come to Perth fresh off their debut national tour. Maestros of the mix-match, the dynamite duo are the starlight kings of electronic music.</p>
                      </div>
                    </div>
-
-                   <div className='grid--artist col-xs-12 col-sm-4'>
-                     <div className='grid--artist__image SamPerry'> </div>
-                     <div className='grid--artist__info'>
-                       <h3 className='grid--artist__info--title'>Sam Perry</h3>
-                       <p>One-man orchestra and winner of The Voice Australia, Perth talent Sam Perry is set to ignite the stage with his distinctive vocal stylings and hypnotic musical style.</p>
-                     </div>
-                   </div>
                    <div className='grid--artist col-xs-12 col-sm-4'>
                      <div className='grid--artist__image TkayMaidza'> </div>
                      <div className='grid--artist__info'>
@@ -37,6 +29,13 @@ export class Artists extends React.Component<{}, {}> {
                        <p>Confidence, talent and attitude to match. Adelaide artist Tkay Maidza has forged an already-explosive career on the hip-hop scene as Australia’s rap and song-writing fireball queen of energy.</p>
                      </div>
                    </div>
+                   <div className='grid--artist col-xs-12 col-sm-4'>
+                     <div className='grid--artist__image SamPerry'> </div>
+                     <div className='grid--artist__info'>
+                       <h3 className='grid--artist__info--title'>Sam Perry</h3>
+                       <p>One-man orchestra and winner of The Voice Australia, Perth talent Sam Perry is set to ignite the stage with his distinctive vocal stylings and hypnotic musical style.</p>
+                     </div>
+                   </div>                   
                    <div className='grid--artist col-xs-12 col-sm-2'>
                      <div className='grid--artist__image FlexMami'> </div>
                      <div className='grid--artist__info'>
