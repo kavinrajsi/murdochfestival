@@ -22,6 +22,9 @@
     cursor: pointer;
     .grid--artist{
       height: 45vh;
+      @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape){
+        height: 100vh;
+      }
       width: 100%;
       position: relative;
       &__image{
@@ -76,24 +79,18 @@
         background-image: url('../image/artists/#{$artist-list}.jpg');
       }
     }
-    // .AlisonWonderland{
-    //   @include artist-list(AlisonWonderland);
-    // }
-     //.CosmosMidnight{
-      // background-position: 90% bottom;
-    // }
-    // .SamPerry{
-    //   @include artist-list(SamPerry);
-    // }
-    // .TkayMaidza{
-    //   @include artist-list(TkayMaidza);
-    // }
-    // .FlexMami{
-    //   @include artist-list(FlexMami);
-    // }
-    // .ArnoFaraji{
-    //   @include artist-list(ArnoFaraji);
-    // }
+    .TkayMaidza{
+      background-position: 80% 0%;
+    }
+    .SamPerry{
+      background-position: center;
+    }
+    .ArnoFaraji{
+        background-position: 41% 0%;
+    }
+    .FlexMami{
+      background-position: 84% 0%;
+    }
   }
 }
 
@@ -166,6 +163,17 @@
         max-width: 20%;
       }
     }
+    @media only screen
+      and (min-device-width: 1024px)
+      and (max-device-width: 1366px)
+      and (orientation: portrait){
+        &:nth-child(n){
+          height: 30vh;
+          flex: 0 0 50%;
+          max-width: 50%
+        }
+    }
+
   }
 }
 
