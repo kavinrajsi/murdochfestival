@@ -6,5 +6,6 @@ namespace MurdochFestival.Logging
       public const int SubscribeEntryPost = 2000;
       public const int TicketEntryPost = 3000;
       public const int CrmCreateContact = 4000;
+      public const int SendSystemEmail = 5000;
     }
 }

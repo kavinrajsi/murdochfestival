@@ -1,10 +1,12 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Logging;
 using Microsoft.Net.Http.Headers;
 using MurdochFestival.Data;
@@ -28,9 +30,13 @@ namespace MurdochFestival
             services.AddDbContext<FormContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddMvc();
 
-            //register crm integration
+            services.Configure<Settings.MailConfig>(Configuration.GetSection("MailSettings"));
+            
+            //custom services
             services.AddTransient<ICrmService, CrmService>();
-
+            services.AddTransient<IEmailService, EmailService>();
+            services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            
             //compression
             services.Configure<GzipCompressionProviderOptions>(options => options.Level = System.IO.Compression.CompressionLevel.Optimal);
             services.AddResponseCompression(options =>

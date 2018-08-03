@@ -92,7 +92,7 @@ export class Festival extends React.Component<{}, {}> {
                         <Panel.Heading>
                             <Panel.Title toggle>Ticket info</Panel.Title>
                         </Panel.Heading>
-                        <Panel.Body collapsible><p>Grab your tickets from <a href="http://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18" target="_blank">Ticketek</a> or purchase them on the day at Perth Arena (if not sold out prior!).</p><p>Tickets are just $40 + booking fee, so make sure you get in early.</p></Panel.Body>
+                        <Panel.Body collapsible><p>Grab your tickets from <a href="http://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18" target="_blank">Ticketek</a> or purchase them on the day at Perth Arena (if not sold out prior!).</p><p>Tickets are just $39.95, so make sure you get in early.</p></Panel.Body>
                     </Panel>
                     <Panel eventKey="7">
                         <Panel.Heading>
@@ -106,6 +106,12 @@ export class Festival extends React.Component<{}, {}> {
                         </Panel.Heading>
                         <Panel.Body collapsible><p>You won't go hungry with the range of delicious and affordable food options available for you to choose from. More info coming soon…</p></Panel.Body>
                     </Panel>
+                  <Panel eventKey="9">
+                    <Panel.Heading>
+                      <Panel.Title toggle>Info for volunteers</Panel.Title>
+                    </Panel.Heading>
+                    <Panel.Body collapsible><p>Want to get involved as a volunteer? If you’re a Murdoch University student you’ll be able to sign-up to be a volunteer at the event! Look out for further posts on our Murdoch University social accounts about how to get involved, and how to register!</p></Panel.Body>
+                  </Panel>
                 </PanelGroup>
             </div>
         </div>;
