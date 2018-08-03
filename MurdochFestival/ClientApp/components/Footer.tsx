@@ -11,7 +11,7 @@ const murdoch = require('../image/footer/murdoch.png');
 
 export class Footer extends React.Component<{}, {}> {
     constructor(props:any) {
-        super(props);        
+        super(props);
       }
 
     public render() {
@@ -20,7 +20,7 @@ export class Footer extends React.Component<{}, {}> {
             <div className='footer--nav'>
                 <div className='copyrights--nav'>
                     <a href="#" data-toggle="modal" data-target="#contactus-address">/ Contact Us</a>
-                    {/*<a href="#">/ Terms of Entry</a>*/} 
+                    {/*<a href="#">/ Terms of Entry</a>*/}
                     <a href="https://goto.murdoch.edu.au/Privacy" target="_blank">/ Privacy Policy</a>
                 </div>
                 <div className='footer--address'>
@@ -43,7 +43,7 @@ export class Footer extends React.Component<{}, {}> {
             <ContactUsForm />
 
             <SubscribeForm />
-          
+
         </div>;
     }
 }
