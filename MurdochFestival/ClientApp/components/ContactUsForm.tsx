@@ -90,9 +90,8 @@ export class ContactUsForm extends React.Component<{}, {cname: string,  cemail: 
                       <form onSubmit={this.handleContactUsSubmit} className='modal-form'>
                           <div className='form-group'>
                             <p>Please read the <a href="#info" id="info_link">info section</a> on this website before sending an enquiry.</p>
-                            <p>Ticketing enquiries &amp; support</p>
-                            <p>Please contact <a href="https://premier.ticketek.com.au/content/help/contactus.aspx" target="_blank">Ticketek</a>.</p>
-                            <p>General, promoter and PR enquiries</p>
+                            <p><strong>Ticketing enquiries &amp; support:</strong> Please contact <a href="https://premier.ticketek.com.au/content/help/contactus.aspx" target="_blank">Ticketek</a>.</p>
+                            <p><strong>General, promoter and PR enquiries:</strong> Please submit your enquiry below.</p>
                           </div>
 
                           <FormGroup controlId="cnameText" validationState={this.getCnameValidationState()}>
