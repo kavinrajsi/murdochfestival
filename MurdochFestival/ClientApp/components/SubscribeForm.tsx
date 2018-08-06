@@ -81,7 +81,7 @@ export class SubscribeForm extends React.Component<{}, {sname: string, semail: s
         <button type="button" className="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span className="sr-only">Close</span></button>
         <h4 className="modal-title" id="stay-date">Stay up to date</h4>
       </div>
-      <div className="modal-body">
+      <div className="modal-body subscribe">
         { this.state.ssubmittedMessage === '' ?
           <form onSubmit={this.handleSubscribeSubmit} className='modal-form formlable-with'>
             <div className='form-group'>

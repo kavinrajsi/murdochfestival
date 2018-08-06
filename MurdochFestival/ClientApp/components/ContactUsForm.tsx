@@ -89,20 +89,22 @@ export class ContactUsForm extends React.Component<{}, {cname: string,  cemail: 
             { this.state.csubmittedMessage === '' ?
                       <form onSubmit={this.handleContactUsSubmit} className='modal-form'>
                           <div className='form-group'>
-                            <p>Please read the info section on this website before sending an enquiry.</p>
+                            <p>Please read the <a href="#info" id="info_link">info section</a> on this website before sending an enquiry.</p>
+                            <p><strong>Ticketing enquiries &amp; support:</strong> Please contact <a href="https://premier.ticketek.com.au/content/help/contactus.aspx" target="_blank">Ticketek</a>.</p>
+                            <p><strong>General, promoter and PR enquiries:</strong> Please submit your enquiry below.</p>
                           </div>
 
-                          <FormGroup controlId="cnameText" validationState={this.getCnameValidationState()}>                        
+                          <FormGroup controlId="cnameText" validationState={this.getCnameValidationState()}>
                             <FormControl type="text" name="cname" value={this.state.cname} placeholder="Name" onChange={this.handleChange} />
                             <FormControl.Feedback />
                           </FormGroup>
 
-                          <FormGroup controlId="cemailText" validationState={this.getCEmailValidationState()}>                        
+                          <FormGroup controlId="cemailText" validationState={this.getCEmailValidationState()}>
                             <FormControl type="email" name="cemail" value={this.state.cemail} placeholder="Email" onChange={this.handleChange} />
                             <FormControl.Feedback />
                           </FormGroup>
 
-                          <FormGroup controlId="cmessageText" validationState={this.getCMessageValidationState()}>                        
+                          <FormGroup controlId="cmessageText" validationState={this.getCMessageValidationState()}>
                             <FormControl componentClass="textarea" name="cmessage" value={this.state.cmessage} placeholder="Message" onChange={this.handleChange} />
                             <FormControl.Feedback />
                           </FormGroup>
