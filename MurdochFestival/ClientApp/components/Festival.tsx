@@ -29,8 +29,21 @@ export class Festival extends React.Component<{}, {}> {
                             <Panel.Title toggle>Who can go</Panel.Title>
                         </Panel.Heading>
                         <Panel.Body collapsible>
-                        <p>Sound On is an exclusive drug and alcohol free festival for 14-18 year old high school students only.</p>
-                        <p>Parents and guardians are welcome to relax in the dedicated parent zone at the Arena, or explore the city sites in the vicinity.</p>
+                          <p>Sound On is an exclusive drug and alcohol free festival for 14 - 18 year old high school and TAFE students only.</p>
+                          <p>Parents and guardians are welcome to relax in the dedicated parent zone at the Arena (free of charge, no ticket required), or explore the city sites in the vicinity.</p>
+                          <p>If you are 19 years or over you cannot attend the event. Parents wishing to come along with their kids or siblings 19 or over wishing to accompany a relative or friend will not be allowed into the event. To ensure all patrons are high school students – photo ID may be required. For ID to be valid, it must contain your D.O.B, a photo and your full name.</p>
+                          <p>THE FOLLOWING FORMS OF ID WILL BE ACCEPTED:<br /><br />
+                          ISIC Youth ID Card - <a href="https://au-online.aliveplatform.com/?partnerID=605">CLICK HERE TO BUY</a> for only $30<br />
+                          High School Student Card<br />
+                          Learners Permit<br />
+                          Drivers Licence<br />
+                          Passport<br />
+                          Colour photocopy of a Passport that has been signed and stamped by a Justice of the Peace or Pharmacists, Nurse or Police officer<br />
+                          Plastic or Laminated School ID<br />
+                          Boat License (only if it has Name, D.O.B & Photo)<br />
+                          Motorbike Licence (only if it has Name, D.O.B & Photo)<br />
+                          Proof of Age card<br />
+                          Copy of Birth Certificate & Current photo, both signed by a Justice of the Peace or Pharmacists, Nurse or Police officer</p>
                         </Panel.Body>
                     </Panel>
                     <Panel eventKey="3">

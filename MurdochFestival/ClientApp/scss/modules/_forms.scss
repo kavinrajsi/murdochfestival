@@ -59,6 +59,12 @@
     }
     .modal-body{
         padding: 0px;
+
+        &.subscribe{
+          a{
+            color:$Dandelion;
+          }
+        }
     }
 }
 
