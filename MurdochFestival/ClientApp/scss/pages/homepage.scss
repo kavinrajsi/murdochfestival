@@ -13,6 +13,9 @@
   }
 }
 
+a.external {
+  @include external;
+}
 
 .grid--wrapper{
   .grid--artists{
