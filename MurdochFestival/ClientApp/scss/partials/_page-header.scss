@@ -21,12 +21,12 @@
     position: relative;
 
     .pricing-graphic {
-      left: 25px;
+      left: 10px;
       max-width: 120px;
       position: absolute;
       top: 20px;
 
-      @include interpolate('max-width', 320px, 120px, 767px, 240px, 'ease');
+      @include interpolate('max-width', 320px, 120px, 767px, 160px, 'ease');
       @include interpolate('max-width', 768px, 160px, 1023px, 180px, 'ease');
       @include interpolate('max-width', 1024px, 180px, 1200px, 240px, 'ease');
 
