@@ -28,7 +28,7 @@ export class Footer extends React.Component<{}, {}> {
                     <address>
                         <span>Perth Arena</span>
                         <span><a href="http://www.pertharena.com.au/Venue_Info/Getting_Here" target="_blank">Get directions</a></span>
-                        <span><a href="http://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18" target="_blank">Tickets available through Ticketek</a></span>
+                        <span><a href="https://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18" target="_blank">Tickets available through Ticketek</a></span>
                     </address>
                 </div>
             </div>            
@@ -42,7 +42,7 @@ export class Footer extends React.Component<{}, {}> {
                 <div className='other'>
                   <a href='https://www.transperth.wa.gov.au/' target="_blank"> <img alt='Transperth' src={String(transperth)} /> </a>
                   <a href='http://www.pertharena.com.au/Events/Sound%20On%20Festival' target="_blank"> <img alt='Perth Arena' src={String(pertharena)}  /> </a>
-                  <a href='http://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18' target="_blank"> <img alt='Ticketek' src={String(ticketek)} /> </a>
+                  <a href='https://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18' target="_blank"> <img alt='Ticketek' src={String(ticketek)} /> </a>
                   <a href='https://www.theindigoproject.com.au/' target="_blank"> <img alt='Indigo Logo' src={String(indigo_logos)} /> </a>
                   <a href='http://www.murdoch.edu.au/study' target="_blank"> <img alt='Murdoch' src={String(murdoch)} /> </a>
                 </div>

@@ -8,6 +8,16 @@ export class Festival extends React.Component<{}, {}> {
             <div className='row'>
                 <h2 className='left l-section-title'>Info</h2>
                 <PanelGroup accordion id="accordion-example">
+                    <Panel eventKey="0">
+                        <Panel.Heading>
+                            <Panel.Title toggle>About Sound On Festival</Panel.Title>
+                        </Panel.Heading>
+                        <Panel.Body collapsible>
+                        <p>Sound On Festival is Perth's only underage music festival exclusively for 14-18 year olds.</p>
+                        <p>Some of Australia's hottest electronic, hip hop and DJ talents are combining forces with The Indigo Project to create a must-attend festival just for high school students. Enjoy killer beats, awesome experiences, and life advice from the artists themselves. In this once-in-a-lifetime opportunity, get to know how Alison Wonderland, Cosmo's Midnight, Tkay Maidza, Sam Perry, and FlexMami turned their passions into career goals, and their advice on study, success, and everything in between.</p>
+                        <p>Avoid some serious FOMO and <a href="https://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18" target="_blank">get your tickets</a> ASAP.</p>
+                        </Panel.Body>
+                    </Panel>
                     <Panel eventKey="1">
                         <Panel.Heading>
                             <Panel.Title toggle>How to get there</Panel.Title>
@@ -105,7 +115,7 @@ export class Festival extends React.Component<{}, {}> {
                         <Panel.Heading>
                             <Panel.Title toggle>Ticket info</Panel.Title>
                         </Panel.Heading>
-                        <Panel.Body collapsible><p>Grab your tickets from <a href="http://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18" target="_blank">Ticketek</a> or purchase them on the day at Perth Arena (if not sold out prior!).</p><p>Tickets are just $39.95, so make sure you get in early.</p></Panel.Body>
+                        <Panel.Body collapsible><p>Grab your tickets from <a href="https://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18" target="_blank">Ticketek</a> or purchase them on the day at Perth Arena (if not sold out prior!).</p><p>Tickets are just $39.95, so make sure you get in early.</p></Panel.Body>
                     </Panel>
                     <Panel eventKey="7">
                         <Panel.Heading>

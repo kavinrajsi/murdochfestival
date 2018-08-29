@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+const pricing = require('../image/pricing-graphic.png');
+
 export class Hero extends React.Component<{}, {}> {
     public render() {
         return <div className='hero--banner'>
