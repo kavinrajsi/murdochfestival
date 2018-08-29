@@ -2,11 +2,14 @@
   // height: calc(100vh - 100px);
   height: 100vh;
   padding-bottom: 40px;
+
   @media (min-width: 768px) {
     padding-bottom: 68px;
   }
+
   position: relative;
-  &__mini-info{
+
+  &__mini-info {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -15,31 +18,57 @@
     text-transform: uppercase;
     height: 77vh;
     justify-content: space-between;
-     .events-list{
-       margin-top: 20px;
-     }
-     .events-list,
-     .event-time-venue{
-        margin-bottom: 0px;
-        li{
-          @include interpolate("font-size", 768px, 20px, 1200px, 34px, "ease-in");
-          font-weight: 700;
-          color: inherit;
-          text-align: inherit;
-          line-height: normal;
-        }
-     }
-    .event-time-venue{
+    position: relative;
+
+    .pricing-graphic {
+      left: 25px;
+      max-width: 120px;
+      position: absolute;
+      top: 20px;
+
+      @include interpolate('max-width', 320px, 120px, 767px, 240px, 'ease');
+      @include interpolate('max-width', 768px, 160px, 1023px, 180px, 'ease');
+      @include interpolate('max-width', 1024px, 180px, 1200px, 240px, 'ease');
+
+      @media (min-width: 768px) {
+        left: auto;
+        right: 0;
+        top: 130px;
+        @include interpolate('top', 768px, 130px, 1200px, 220px, 'ease');
+      }
+    }
+
+    .events-list {
+      margin-top: 20px;
+    }
+
+    .events-list,
+    .event-time-venue {
+      margin-bottom: 0px;
+
+      li {
+        @include interpolate("font-size", 768px, 20px, 1200px, 34px, "ease-in");
+        font-weight: 700;
+        color: inherit;
+        text-align: inherit;
+        line-height: normal;
+      }
+    }
+
+    .event-time-venue {
       width: 100%;
       text-align: center;
-      @media (min-width: 768px){
+
+      @media (min-width: 768px) {
         width: auto;
         text-align: right;
       }
-      li{
+
+      li {
         color: $Black;
         font-size: 16px;
-        &:first-child{
+
+        &:first-child {
           @include interpolate("font-size", 768px, 20px, 1200px, 30px, "ease-in");
           color: $White;
 
@@ -50,11 +79,13 @@
       }
     }
   }
-  .scroll-down{
+
+  .scroll-down {
     @include z-index(scrolldown);
     position: relative;
-    .button{
-      &--out__more{
+
+    .button {
+      &--out__more {
         color: $White;
         font-size: 12px;
         font-weight: 700;
@@ -67,12 +98,14 @@
         left: 0px;
         right: 0px;
         bottom: -50px;
-        @media (min-width: 768px){
+
+        @media (min-width: 768px) {
           right: 0px;
           left: initial;
         }
-        &:after{
-         @extend %arrow;
+
+        &:after {
+          @extend %arrow;
         }
       }
     }
