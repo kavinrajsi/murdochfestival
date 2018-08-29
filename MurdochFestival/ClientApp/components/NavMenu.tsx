@@ -35,7 +35,7 @@ export class NavMenu extends React.Component<{}, { isTop: true }> {
                         </div>
                         <ul data-role="menu" className='menu list-inline' >
                             <li className="menu--item visible-xs">
-                                <a className="menu--item__link menu-buytickets" href="http://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18" target="_blank">Buy Tickets</a>
+                                <a className="menu--item__link menu-buytickets" href="https://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18" target="_blank">Buy Tickets</a>
                             </li>
                             <li className="menu--item">
                                 <a className="menu--item__link" href="#artists">Artists</a>
@@ -51,7 +51,7 @@ export class NavMenu extends React.Component<{}, { isTop: true }> {
                             </li>
                         </ul>
                         <div className="masterbar--button">
-                            <a className="button--solid" href="http://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18" target="_blank">Buy Tickets</a>
+                            <a className="button--solid" href="https://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18" target="_blank">Buy Tickets</a>
                         </div>
                     </div>
                 </nav>;
