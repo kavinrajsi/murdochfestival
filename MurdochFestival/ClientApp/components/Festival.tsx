@@ -13,8 +13,8 @@ export class Festival extends React.Component<{}, {}> {
                             <Panel.Title toggle>About Sound On Festival</Panel.Title>
                         </Panel.Heading>
                         <Panel.Body collapsible>
-                        <p>Sound On Festival is Perth's only underage music gig exclusively for 14-18 year olds.</p>
-                        <p>Some of Australia’s hottest electronic, hip hop and DJ talents are combining forces with The Indigo Project to create a must-attend festival just for high school students. Enjoy killer beats, awesome activations, and life advice from the artists themselves. In this once-in-a-lifetime opportunity, get to know how Alison Wonderland, Cosmo’s Midnight, Tkay Maidza, Sam Perry, and FlexMami turned their passions into career goals, and their advice on study, success, and everything in between.</p>
+                        <p>Sound On Festival is Perth's only underage music festival exclusively for 14-18 year olds.</p>
+                        <p>Some of Australia's hottest electronic, hip hop and DJ talents are combining forces with The Indigo Project to create a must-attend festival just for high school students. Enjoy killer beats, awesome experiences, and life advice from the artists themselves. In this once-in-a-lifetime opportunity, get to know how Alison Wonderland, Cosmo's Midnight, Tkay Maidza, Sam Perry, and FlexMami turned their passions into career goals, and their advice on study, success, and everything in between.</p>
                         <p>Avoid some serious FOMO and <a href="https://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18" target="_blank">get your tickets</a> ASAP.</p>
                         </Panel.Body>
                     </Panel>
