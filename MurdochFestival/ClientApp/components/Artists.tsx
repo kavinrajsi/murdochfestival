@@ -12,7 +12,7 @@ export class Artists extends React.Component<{}, {}> {
                      <div className='grid--artist__image AlisonWonderland'> </div>
                      <div className='grid--artist__info'>
                        <h3 className='grid--artist__info--title'>Alison Wonderland</h3>
-                       <p>Australian electronic music royalty Alison Wonderland brings her vibrant pop-pulse and killer live show to Perth Arena for a one off performance. Don't miss her adrenaline-inducing set ft. tracks from hit album Awake.</p>
+                       <p>Australian electronic music royalty Alison Wonderland brings her vibrant pop-pulse and killer live show to RAC Arena for a one off performance. Don't miss her adrenaline-inducing set ft. tracks from hit album Awake.</p>
                      </div>
                    </div>
                    <div className='grid--artist col-xs-12 col-sm-4'>

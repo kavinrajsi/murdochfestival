@@ -29,9 +29,9 @@ export class Festival extends React.Component<{}, {}> {
                         <p className="underline"> <span>Trains </span> </p>
                         <p>All train lines take you into Perth or Perth Underground stations, located only a short walk down Wellington Street to the Arena.</p>
                         <p className="underline"> <span>Buses </span> </p>
-                        <p>Please check the timetable and plan your journey, as some timetabled services may not operate after evening events. Cat services are also available and include stops close to Perth Arena.</p>
+                        <p>Please check the timetable and plan your journey, as some timetabled services may not operate after evening events. Cat services are also available and include stops close to RAC Arena.</p>
                         <p className="underline"> <span>Driving </span> </p>
-                        <p>Parking is available on-site. For directions on the best way to get to Perth Arena and where to park, check out the <a href="http://www.pertharena.com.au/Venue_Info/Getting_Here" target="_blank">Directions</a> page on their website.</p>
+                        <p>Parking is available on-site. For directions on the best way to get to RAC Arena and where to park, check out the <a href="http://www.pertharena.com.au/Venue_Info/Getting_Here" target="_blank">Directions</a> page on their website.</p>
                         </Panel.Body>
                     </Panel>
                     <Panel eventKey="2">
@@ -66,7 +66,7 @@ export class Festival extends React.Component<{}, {}> {
                         <Panel.Heading>
                             <Panel.Title toggle>Onsite facilities</Panel.Title>
                         </Panel.Heading>
-                        <Panel.Body collapsible><p>Perth Arena has all the things you need to get the most out of the day. You'll have access to:</p>
+                        <Panel.Body collapsible><p>RAC Arena has all the things you need to get the most out of the day. You'll have access to:</p>
                           <ul>
                             <li>Free water</li>
                             <li>Food options</li>
@@ -76,16 +76,16 @@ export class Festival extends React.Component<{}, {}> {
                             <li>Venue parking</li>
                             <li>Box Office ticketing</li>
                           </ul>
-                        <p>Check out the venue facilities on the <a href="http://www.pertharena.com.au" target="_blank">Perth Arena website</a>.</p></Panel.Body>
+                        <p>Check out the venue facilities on the <a href="http://www.pertharena.com.au" target="_blank">RAC Arena website</a>.</p></Panel.Body>
                     </Panel>
                     <Panel eventKey="5">
                         <Panel.Heading>
                             <Panel.Title toggle>Things you can bring</Panel.Title>
                         </Panel.Heading>
                         <Panel.Body collapsible>
-                        <p>Whether you're a must-bring-everything type of person or prefer to travel light, make sure your belongings abide by the <a href="http://www.pertharena.com.au/Venue_Info/Prohibited_Items" target="_blank">conditions of entry</a> at Perth Arena, and bags are no bigger than A4 size.</p>
+                        <p>Whether you're a must-bring-everything type of person or prefer to travel light, make sure your belongings abide by the <a href="http://www.pertharena.com.au/Venue_Info/Prohibited_Items" target="_blank">conditions of entry</a> at RAC Arena, and bags are no bigger than A4 size.</p>
                         <p>Sound On is a drug and alcohol free event.</p>
-                        <p>To make sure you don’t miss out on any of the great acts, make sure you don’t bring any items prohibited by Perth Arena to the event:</p>
+                        <p>To make sure you don’t miss out on any of the great acts, make sure you don’t bring any items prohibited by RAC Arena to the event:</p>
                         <ul>
                           <li>Alcohol</li>
                           <li>Cans, bottles, containers and open drink containers</li>
@@ -105,17 +105,17 @@ export class Festival extends React.Component<{}, {}> {
                           <li>Audio and/or visual recording, broadcasting or transmission equipment</li>
                           <li>Bicycles / rollerblades / skateboards or scooters</li>
                           <li>Prams / pushers / strollers or baby carriers</li>
-                          <li>Any other item that in the opinion of Perth Arena Management could cause harm or public nuisance</li>
+                          <li>Any other item that in the opinion of RAC Arena Management could cause harm or public nuisance</li>
                           <li>Any other item that is prohibited by the touring company or artist</li>
                         </ul>
-                        <p>Be sure to check Perth Arena’s website for the full list.</p>
+                        <p>Be sure to check RAC Arena’s website for the full list.</p>
                         </Panel.Body>
                     </Panel>
                     <Panel eventKey="6">
                         <Panel.Heading>
                             <Panel.Title toggle>Ticket info</Panel.Title>
                         </Panel.Heading>
-                        <Panel.Body collapsible><p>Grab your tickets from <a href="https://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18" target="_blank">Ticketek</a> or purchase them on the day at Perth Arena (if not sold out prior!).</p><p>Tickets are just $39.95, so make sure you get in early.</p></Panel.Body>
+                        <Panel.Body collapsible><p>Grab your tickets from <a href="https://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18" target="_blank">Ticketek</a> or purchase them on the day at RAC Arena (if not sold out prior!).</p><p>Tickets are just $39.95, so make sure you get in early.</p></Panel.Body>
                     </Panel>
                     <Panel eventKey="7">
                         <Panel.Heading>
