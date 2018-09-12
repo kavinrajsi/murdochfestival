@@ -20,7 +20,7 @@ export class Experiences extends React.Component<{}, {}> {
                     <div className='list--experience__image future-beats-experiences'> </div>
                     <div>
                       <h3 className='list--experience__info--title'>Future beats \ + The Indigo project </h3>
-                      <p>The Indigo Project brings their hypnotic and immersive Future Beats experience to Perth Arena. Using the power of sound, mindfulness, and music therapy you'll be guided through an immersive music experience that will let you be completely in the moment. With the arena speakers cranked to the max, you'll feel music in a whole new way and leave being able to harness music to tune out the sounds of everyday life, stress and anxiety – and tune in to where you want to go.</p>
+                      <p>The Indigo Project brings their hypnotic and immersive Future Beats experience to RAC Arena. Using the power of sound, mindfulness, and music therapy you'll be guided through an immersive music experience that will let you be completely in the moment. With the arena speakers cranked to the max, you'll feel music in a whole new way and leave being able to harness music to tune out the sounds of everyday life, stress and anxiety – and tune in to where you want to go.</p>
                     </div>
                   </div>
 
@@ -34,7 +34,7 @@ export class Experiences extends React.Component<{}, {}> {
                   <div className='list--experience col-xs-12'>
                      <div className='list--experience__info'>
                        <h3 className='list--experience__info--title'>Ultimate Walter Challenge</h3>
-                       <p>Have some serious fun with Murdoch's resident Arena intellectual, Walter. Put your free-thinking skills to the test and challenge Walter to win some awesome prizes, including a VIP experience to a Perth Arena event.</p>
+                       <p>Have some serious fun with Murdoch's resident Arena intellectual, Walter. Put your free-thinking skills to the test and challenge Walter to win some awesome prizes, including a VIP experience to an RAC Arena event.</p>
                      </div>
                    </div>
 
