@@ -110,7 +110,6 @@
       font-weight: 700;      
 
       @media (min-width: 768px) {
-        float: right;
         text-align: right;
       }
 
@@ -132,7 +131,6 @@
       margin-top: 10px;
     }
 
-
     @media (max-width: 992px) {
       text-align: center;
     }
@@ -152,7 +150,7 @@
 
       &:nth-child(2) {
         img {
-          height: 72px;
+          height: 42px;
         }
       }
 
@@ -172,6 +170,16 @@
         img {
           margin-right: 0px;
         }
+      }
+    }
+
+    .fine-print {
+      color: #fff;
+      font-size: 12px;
+      margin: 20px 0;
+
+      @media (min-width: 768px) {
+        text-align: right;
       }
     }
   }
