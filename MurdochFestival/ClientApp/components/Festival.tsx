@@ -31,7 +31,7 @@ export class Festival extends React.Component<{}, {}> {
                         <p className="underline"> <span>Buses </span> </p>
                         <p>Please check the timetable and plan your journey, as some timetabled services may not operate after evening events. Cat services are also available and include stops close to RAC Arena.</p>
                         <p className="underline"> <span>Driving </span> </p>
-                        <p>Parking is available on-site. For directions on the best way to get to RAC Arena and where to park, check out the <a href="http://www.pertharena.com.au/Venue_Info/Getting_Here" target="_blank">Directions</a> page on their website.</p>
+                        <p>Parking is available on-site. For directions on the best way to get to RAC Arena and where to park, check out the <a href="http://www.racarena.com.au/Venue_Info/Getting_Here" target="_blank">Directions</a> page on their website.</p>
                         </Panel.Body>
                     </Panel>
                     <Panel eventKey="2">
@@ -76,14 +76,14 @@ export class Festival extends React.Component<{}, {}> {
                             <li>Venue parking</li>
                             <li>Box Office ticketing</li>
                           </ul>
-                        <p>Check out the venue facilities on the <a href="http://www.pertharena.com.au" target="_blank">RAC Arena website</a>.</p></Panel.Body>
+                        <p>Check out the venue facilities on the <a href="http://www.racarena.com.au" target="_blank">RAC Arena website</a>.</p></Panel.Body>
                     </Panel>
                     <Panel eventKey="5">
                         <Panel.Heading>
                             <Panel.Title toggle>Things you can bring</Panel.Title>
                         </Panel.Heading>
                         <Panel.Body collapsible>
-                        <p>Whether you're a must-bring-everything type of person or prefer to travel light, make sure your belongings abide by the <a href="http://www.pertharena.com.au/Venue_Info/Prohibited_Items" target="_blank">conditions of entry</a> at RAC Arena, and bags are no bigger than A4 size.</p>
+                        <p>Whether you're a must-bring-everything type of person or prefer to travel light, make sure your belongings abide by the <a href="http://www.racarena.com.au/Venue_Info/Prohibited_Items" target="_blank">conditions of entry</a> at RAC Arena, and bags are no bigger than A4 size.</p>
                         <p>Sound On is a drug and alcohol free event.</p>
                         <p>To make sure you don’t miss out on any of the great acts, make sure you don’t bring any items prohibited by RAC Arena to the event:</p>
                         <ul>
@@ -99,7 +99,7 @@ export class Festival extends React.Component<{}, {}> {
                           <li>E-cigarettes</li>
                           <li>Large umbrellas (such as golf umbrellas)</li>
                           <li>Chairs / stools</li>
-                          <li>Bags larger than A4 or similar size (including handbags). For specific event bag restrictions see the relevant <a href="http://www.pertharena.com.au/Events" target="_blank">event page</a>.</li>
+                          <li>Bags larger than A4 or similar size (including handbags). For specific event bag restrictions see the relevant <a href="http://www.racarena.com.au/Events" target="_blank">event page</a>.</li>
                           <li>Animals (apart from registered assistance dogs)</li>
                           <li>External food, chewing gum, eskies, boxes</li>
                           <li>Audio and/or visual recording, broadcasting or transmission equipment</li>
@@ -133,7 +133,7 @@ export class Festival extends React.Component<{}, {}> {
                     <Panel.Heading>
                       <Panel.Title toggle>Info for volunteers</Panel.Title>
                     </Panel.Heading>
-                    <Panel.Body collapsible><p>Want to get involved as a volunteer? If you’re a Murdoch University student you’ll be able to sign-up to be a volunteer at the event! Look out for further posts on our Murdoch University social accounts about how to get involved, and how to register!</p></Panel.Body>
+                    <Panel.Body collapsible><p>Registrations have now closed and volunteers will be contacted directly. If you have any queries please use the <a href="#" data-toggle="modal" data-target="#contactus-address">Contact Us form</a>.</p></Panel.Body>
                   </Panel>
                 </PanelGroup>
             </div>
