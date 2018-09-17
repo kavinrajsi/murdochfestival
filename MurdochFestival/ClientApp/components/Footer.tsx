@@ -47,7 +47,7 @@ export class Footer extends React.Component<{}, {}> {
                   <a href='http://www.murdoch.edu.au/study' target="_blank"> <img alt='Murdoch' src={String(murdoch)} /> </a>
                 </div>
                 <div className="fine-print">
-                  *Transactions fees may apply
+                  *Transaction fees may apply
                 </div>
             </div>
             </div>
