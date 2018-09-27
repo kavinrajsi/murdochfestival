@@ -40,3 +40,12 @@ button{
     }
   }  
 }
+
+.masterbar--button {
+  @extend %buy-tickets;
+
+  &.-center {
+    padding: 0 0 30px;
+    text-align: center;
+  }
+}

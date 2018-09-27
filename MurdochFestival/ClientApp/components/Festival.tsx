@@ -60,7 +60,11 @@ export class Festival extends React.Component<{}, {}> {
                         <Panel.Heading>
                             <Panel.Title toggle>Information for parents </Panel.Title>
                         </Panel.Heading>
-                        <Panel.Body collapsible><p>For parents and guardians who would like to stay at the venue, there will be a dedicated space for you to relax while you wait.</p><p>Alternatively, why not check out what’s happening near the Arena? <a  href="https://www.visitperthcity.com/?_ga=2.227714141.1505459702.1532507409-539089213.1532507409 " target="_blank">The City of Perth website</a> has all the info on where to go and what to do. </p></Panel.Body>
+                        <Panel.Body collapsible>
+                          <p>For parents and guardians who would like to stay at the venue, there will be a dedicated parents' lounge for you to relax while you wait.</p>
+                          <p>Located at the Best Brew inside the Four Points Hotel (directly opposite the Arena) the relaxed bar is a comfortable drop off/pick up point, and our staff and ambassadors will be on hand to answer any questions you have and provide advice. Light refreshments will be available.</p>
+                          <p>Alternatively, why not check out what's happening near the Arena? <a href="https://www.visitperthcity.com/?_ga=2.227714141.1505459702.1532507409-539089213.1532507409" target="_blank">The City of Perth website</a> has all the info on where to go and what to do.</p>
+                        </Panel.Body>
                     </Panel>
                     <Panel eventKey="4">
                         <Panel.Heading>
@@ -115,19 +119,42 @@ export class Festival extends React.Component<{}, {}> {
                         <Panel.Heading>
                             <Panel.Title toggle>Ticket info</Panel.Title>
                         </Panel.Heading>
-                        <Panel.Body collapsible><p>Grab your tickets from <a href="https://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18" target="_blank">Ticketek</a> or purchase them on the day at RAC Arena (if not sold out prior!).</p><p>Tickets are just $39.95, so make sure you get in early.</p></Panel.Body>
+                        <Panel.Body collapsible>
+                          <p>Grab your tickets from <a href="https://premier.ticketek.com.au/shows/show.aspx?sh=SOUNDONF18" target="_blank">Ticketek</a> or purchase them on the day at RAC Arena (if not sold out prior!).</p>
+                          <p>Tickets are just $39.95*, so make sure you get in early.</p>
+                          <p className="underline"><span>Ticket Pick Up</span></p>
+                          <p>RAC Arena recommend picking up your tickets before you head to the venue. <a href="http://premier.ticketek.com.au/Content/Outlets/agencies_wa.aspx" target="_blank">Click here</a> to find a Ticketek Pre-paid Collection Outlet closest to you. If you are not the account holder and need to pick up tickets at the venue box office please ensure that you have authority from the account holder to collect tickets on their behalf.  A copy of the account holders photo ID with a signed statutory declaration stating that you (full name) are collecting tickets on behalf of the account holder. Please bring along your photo ID for verification.</p>
+                        </Panel.Body>
                     </Panel>
                     <Panel eventKey="7">
                         <Panel.Heading>
                             <Panel.Title toggle>Festival times</Panel.Title>
                         </Panel.Heading>
-                        <Panel.Body collapsible><p>Watch this space!</p></Panel.Body>
+                        <Panel.Body collapsible>
+                          <p className="underline"><span>Main Stage</span></p>
+                          <strong>3.00pm:</strong> Opening Ceremony with Indigo Project <br />
+                          <strong>3.30pm:</strong> FlexMami <br />
+                          <strong>4.30pm:</strong> Arno Faraji <br />
+                          <strong>5.10pm:</strong> Sam Perry <br />
+                          <strong>6.00pm:</strong> Tkay Maizda <br />
+                          <strong>7.10pm:</strong> Cosmos Midnight <br />
+                          <strong>8.30pm:</strong> Alison Wonderland <br /><br />
+                          And DJ Shann across the day
+                          <br /><br />
+                          <p className="underline"><span>Granite Room</span></p>
+                          <strong>4.15pm:</strong> Create the Life You Want Panel  <br />
+                          <strong>5.30pm:</strong> Future Beats #1 <br />
+                          <strong>6.30pm:</strong> Future Beats #2 <br />
+                          <strong>7.30pm:</strong> FlexMami <br />
+                          <strong>8.00pm:</strong> DJ Matt Beattie <br />
+
+                        </Panel.Body>
                     </Panel>
                     <Panel eventKey="8">
                         <Panel.Heading>
                             <Panel.Title toggle>Food and drink </Panel.Title>
                         </Panel.Heading>
-                        <Panel.Body collapsible><p>You won't go hungry with the range of delicious and affordable food options available for you to choose from. More info coming soon…</p></Panel.Body>
+                        <Panel.Body collapsible><p>You won't go hungry, or thirsty, with the delicious and affordable options at the RAC Arena's food outlets.</p></Panel.Body>
                     </Panel>
                   <Panel eventKey="9">
                     <Panel.Heading>

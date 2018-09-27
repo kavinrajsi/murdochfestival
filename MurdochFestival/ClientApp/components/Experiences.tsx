@@ -48,7 +48,21 @@ export class Experiences extends React.Component<{}, {}> {
                    <div className='list--experience col-xs-12'>
                      <div className='list--experience__info'>
                        <h3 className='list--experience__info--title'>Gaming Zone</h3>
-                       <p>Get your game on and challenge your friends in the Gaming Zone. With an awesome range of arcade games, it's the perfect way to have some fun between sets. And watch out for the chance to challenge a big name from the line-up head to head.</p>
+                       <p>Get your game on and challenge your friends in the Gaming Zone. With an awesome range of arcade, console and VR games, it's the perfect way to have some fun between sets. And watch out for the chance to challenge a big name from the line-up head to head.</p>
+                     </div>
+                   </div>
+
+                   <div className='list--experience col-xs-12'>
+                     <div className='list--experience__info'>
+                       <h3 className='list--experience__info--title'>People Inside Bubbles</h3>
+                       <p>Grab your camera and capture some fun moments with your mates inside Bubbly's real, dazzlingly giant soap bubbles!</p>
+                     </div>
+                   </div>
+
+                   <div className='list--experience col-xs-12'>
+                     <div className='list--experience__info'>
+                       <h3 className='list--experience__info--title'>Red Frogs</h3>
+                       <p>The "stay safe, watch your mates" space, hosted by Red Frogs and Murdoch University (including our health students), includes a water station, Allen's Red "Frogs Alive" lollies and advice on how to take care of yourself and each other.</p>
                      </div>
                    </div>
 
@@ -63,6 +77,12 @@ export class Experiences extends React.Component<{}, {}> {
                      <div className='list--experience__info'>
                        <h3 className='list--experience__info--title'>Parents Lounge</h3>
                        <p>Just because the kids get to have fun, doesn't mean the parents can't too – away from the festival zone of course! There will be a dedicated space for parents and guardians to relax just outside the Arena, so you're close by but not cramping their style. Win-win.</p>
+                     </div>
+                   </div>
+
+                   <div className='list--experience col-xs-12'>
+                     <div className='list--experience__info'>
+                       <h3 className='list--experience__info--title'>PLUS BICYCLE POWERED MILKSHAKES, BALL PIT, PET THERAPY, BESTIE BADGES AND BRACELETS, COMMUNITY ARTWORK, GIANT DECKCHAIRS AND MORE!</h3>
                      </div>
                    </div>
 
