@@ -5,6 +5,20 @@ export class Artists extends React.Component<{}, {}> {
         return <div className='container'>
             <div className='row'>
               <h2 className='left l-section-title'>Artists</h2>
+
+              <div className="grid--wrapper">
+                <div className='col-sm-6'>
+                  <div className="masterbar--button -center">
+                    <a className="button--solid -fixedWidth" href="https://www.murdoch.edu.au/docs/default-source/share/sound-on-festival_schedule.pdf" target="_blank">Set times</a>
+                  </div>
+                </div>
+                <div className='col-sm-6'>
+                  <div className="masterbar--button -center">
+                    <a className="button--solid -fixedWidth" href="https://www.murdoch.edu.au/docs/default-source/share/sound-on-festival_map.pdf" target="_blank">Festival map</a>
+                  </div>
+                </div>
+              </div>
+
                <div className='grid--wrapper'>
                  <div className='grid--artists col-xs-12'>
 
