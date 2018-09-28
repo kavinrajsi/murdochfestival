@@ -138,7 +138,7 @@ export class Festival extends React.Component<{}, {}> {
                           <strong>5.10pm:</strong> Sam Perry <br />
                           <strong>6.00pm:</strong> Tkay Maizda <br />
                           <strong>7.10pm:</strong> Cosmos Midnight <br />
-                          <strong>8.30pm:</strong> Alison Wonderland <br /><br />
+                          <strong>8.30pm:</strong> Alison Wonderland <br />
                           And DJ Shann across the day
                           <br /><br />
                           <p className="underline"><span>Granite Room</span></p>
