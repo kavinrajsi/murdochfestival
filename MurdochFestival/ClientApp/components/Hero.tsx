@@ -10,7 +10,6 @@ export class Hero extends React.Component<{}, {}> {
               Murdoch university presents
             </div>
             <div className='hero--banner__mini-info'>
-            <img className='pricing-graphic' alt='One sale now - $39.95 - Online from Ticketek' src={String(pricing)} />
             <ul className='list-unstyled events-list'>
                 <li> / Music </li>
                 <li> / Experiences </li>
